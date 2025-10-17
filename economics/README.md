@@ -1,3 +1,3 @@
-# Economics Notes
+# Economics
 
 This directory contains notes for Economics.

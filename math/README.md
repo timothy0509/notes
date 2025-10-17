@@ -1,3 +1,3 @@
-# Math Notes
+# Math
 
 This directory contains notes for Math.
