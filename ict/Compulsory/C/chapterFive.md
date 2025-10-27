@@ -94,7 +94,7 @@ If a hacker forges a wireless hotspot with the same network name and password, h
 
 ### F. Web browser security setting
 
-In order to strengthen the web browser seuritym users should adopt the privacy and security settings listed below:
+In order to strengthen the web browser security, users should adopt the privacy and security settings listed below:
 
 - Disable the "pop-ups and redirects" features of your web browser
 - Enable the automatic update function of the web browser to ensure that software vulnerabilities would be duly removed.
