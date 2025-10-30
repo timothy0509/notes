@@ -1,6 +1,6 @@
 ## 5.2 Effective Measures to Improve Network Security
 
-### A Installing antivirus software
+### Installing antivirus software
 
 **Antivirus software** is a security tool that can scan the information in a computer and isolate infected files from other files.
 
@@ -14,7 +14,7 @@ To ensure security of computers:
 3. Update antivirus
 4. Update operating system
 
-### B. Installing a Firewall
+### Installing a Firewall
 
 A firewall can monitor computer network traffic, allowing or blockking specified network traffic and therefore offering protection for the internal network.
 
@@ -48,7 +48,7 @@ Hardware firewall writes a firewall program into the chip.
 | Stability        | more              | less              |
 | Cost of building | Higher            | Lower             |
 
-### C. Access control
+### Access control
 
 A network security used to restrict users logging in to the system, and authorise their access permissions.
 
@@ -56,7 +56,7 @@ A network security used to restrict users logging in to the system, and authoris
 - **Authroisation** is the process of granting users the access right to data.
 - **Accounting** is to monitor the user's access records in the system to ensure the correct use of data.
 
-### D. Virtual Private Network (VPN)
+### Virtual Private Network (VPN)
 
 A VPN establishes a "tunnel" between a user's device and the server of a VPN provider to tranmit data. The user installs a VPN application on device. Network data packets can be encrypted, which protects the data transmitted on the Internet and prevent unauthorised access.
 
@@ -72,7 +72,7 @@ connect multiple long-distance LANs to become private intranets for the company.
 
 employees' devices can establish an encrypted channel, and connect to the company's internal network and access internal resources and data.
 
-### E. Wi-Fi wireless network security
+### Wi-Fi wireless network security
 
 #### Wireless encryption protocol
 
@@ -92,9 +92,45 @@ The AP can only allow devices with the MAC addresses on the whitelist to use the
 
 If a hacker forges a wireless hotspot with the same network name and password, hacker can intercept and monitor the victim's network activities.
 
-### F. Web browser security setting
+### Web browser security setting
 
-In order to strengthen the web browser security, users should adopt the privacy and security settings listed below:
+In order to strengthen the web browser seuritym users should adopt the privacy and security settings listed below:
 
 - Disable the "pop-ups and redirects" features of your web browser
 - Enable the automatic update function of the web browser to ensure that software vulnerabilities would be duly removed.
+
+## Online Privacy Threats
+
+### Eavesdropping
+
+### Hacking
+
+### Social Engineering
+
+Social engineering generally refers to a scammer's behaviour of manipulating the trust between people or the victim's greed to trick the victims into disclosing confidential personal information.
+
+#### Baiting
+
+Exploiting the victim's curiosity, such as using CDs or USDs as baits.
+
+#### Quid pro quo
+
+
+
+#### Catfishing
+
+Fake social media accounts which will then fabricate pitiful stories to exploit the sympathy of victims and ask for donations.
+
+#### Pretexting
+
+Scammers will fabricate **storylines** and even pretend to be someone else to gain trust, tricking the victims into providing personal information or money.
+
+#### Phishing
+
+Scammer's behaviour of forging official websites and sending out many fraudulent emails or SMS.
+
+### Spamming
+
+**Spamming** is the behaviour of sending a large number of redundant messages through SMS messages or emails without the recipient's consent, most of which are commercial advertisements. 
+
+The **spam** may cause the mailbox to exceed the quota limit, forcing victims to spend time checking and cleanng up unnecessary messages to free up storage. Otherwise, when the emailbox exceeds the limit, the victims will no longer be able to receive or send any messages, and may even need to pay additional fees to upgrade the storage.
