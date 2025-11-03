@@ -134,3 +134,31 @@ Scammer's behaviour of forging official websites and sending out many fraudulent
 **Spamming** is the behaviour of sending a large number of redundant messages through SMS messages or emails without the recipient's consent, most of which are commercial advertisements. 
 
 The **spam** may cause the mailbox to exceed the quota limit, forcing victims to spend time checking and cleanng up unnecessary messages to free up storage. Otherwise, when the emailbox exceeds the limit, the victims will no longer be able to receive or send any messages, and may even need to pay additional fees to upgrade the storage.
+
+### Overexposed online personal information
+
+### Data over-collection
+
+## 5.4 Methods to Protect Online Privacy
+
+Personal information is a vey important asset. We should raise our awareness of protecting personal privacy and avoiding traps. 
+
+### Anonymous and proxy server
+
+#### Clear browsing history and cookies
+
+When a user browses a website, the website will generate a cookie to store information and store it on the device to record the user's operations. 
+
+#### Turn off autofill
+
+#### Private browsing
+
+### Use and protect passwords properly
+
+We should maintain good habits of protecting passwords:
+- change passwords regularly
+- do not reuse the last 3 passwords you used
+- do not use the same set of passwords on different systems
+- do not record passwords on paper or electronic devices
+- do not send others your passwords
+- do not share passwords with others
