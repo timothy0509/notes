@@ -16,7 +16,7 @@ To ensure security of computers:
 
 ### Installing a Firewall
 
-A firewall can monitor computer network traffic, allowing or blockking specified network traffic and therefore offering protection for the internal network.
+A firewall can monitor computer network traffic, allowing or blocking specified network traffic and therefore offering protection for the internal network.
 
 Features of a firewall:
 
