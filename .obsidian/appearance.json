@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Catppuccin",
+  "monospaceFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": "Inter Display,inter tight,Noto Sans HK",
+  "textFontFamily": "Inter,Noto Sans HK",
+  "accentColor": "#0078d7",
+  "baseFontSizeAction": true,
+  "baseFontSize": 16,
+  "nativeMenus": false
+}
