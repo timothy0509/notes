@@ -4,58 +4,58 @@
 
 Create a fakermon database with a single table of monsters' names.
 
-| Learn                           | Task                                                                                                                                               | SQL / Answers                                          |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| Show databases                  | **List** all databases.                                                                                                                            | `SHOW DATABASES`                                       |
-| Create database                 | **Create** the pokemon database.                                                                                                                   | `CREATE DATABASE pokemon`                              |
-| Drop database                   | Due to copyright issues, avoid the name pokemon.<br>**Rename** the database from pokemon to fakermon.<br><br>*(Cannot directly rename a database)* | `DROP DATABASE pokemon;`<br>`CREATE DATABASE fakermon` |
-| Create table                    | **Create** the monster table.<br><br>*Specify the database by:*<br>`USE <db_name>`                                                                 |                                                        |
-| Show tables                     | **List** all tables                                                                                                                                |                                                        |
-| Show table info                 | **Show** monster table info                                                                                                                        |                                                        |
-| Describe table<br>*(Out Syll')* | **Describe** monster table field                                                                                                                   |                                                        |
-| Rename table                    | The name monster seems haunting<br>**Rename** monster table to pet<br><br>*(Can rename an existing table)*                                         |                                                        |
+| Learn                           | Task                                                                                                                                               | SQL / Answers                                                                  |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Show databases                  | **List** all databases.                                                                                                                            | `SHOW DATABASES`                                                               |
+| Create database                 | **Create** the pokemon database.                                                                                                                   | `CREATE DATABASE pokemon`                                                      |
+| Drop database                   | Due to copyright issues, avoid the name pokemon.<br>**Rename** the database from pokemon to fakermon.<br><br>*(Cannot directly rename a database)* | `DROP DATABASE pokemon;`<br>`CREATE DATABASE fakermon`                         |
+| Create table                    | **Create** the monster table with a name field.<br><br>*Specify the database by:*<br>`USE <db_name>`                                               | `USE fakermon;`<br>`CREATE TABLE MONSTER (`<br>`    name CHAR(20)`<br>`);`<br> |
+| Show tables                     | **List** all tables                                                                                                                                | `USE fakermon;`<br>`SHOW TABLES`                                               |
+| Show table info                 | **Show** monster table info                                                                                                                        | `SHOW CREATE TABLE monster; `                                                  |
+| Describe table<br>*(Out Syll')* | **Describe** monster table field                                                                                                                   | `DESCRIBE monster;`                                                            |
+| Rename table                    | The name monster seems haunting<br>**Rename** monster table to pet<br><br>*(Can rename an existing table)*                                         | `ALTER TABLE monster;`<br>`RENAME pet`                                         |
 
 ## 2. CRUD operations
 
 Manage records in monster table
 
-| Learn                | Task                                                                        | SQL / Answers |
-| -------------------- | --------------------------------------------------------------------------- | ------------- |
-| Setup                | **Drop** pet table<br>**Re-create** pet table with name field               |               |
-| Query all            | **List** all records in monster table<br><br>* Use to verify changes below: |               |
-| Insert a row         | **Add** 'Pikachu' to monster table<br><br>*(Field names are optional)*      |               |
-| Insert multiple rows | **Add** 'Squirtle' and 'Charmander'<br><br>*(Specify field names)*          |               |
-| Update a row         | Pikachu has evolved to Raichu.<br>**Update** 'Pikachu' to 'Raichu'          |               |
-| Delete a row         | **Delete** 'Charmander'                                                     |               |
-| **Question 1**       | Can we add another 'Raichu'?<br>                                            |               |
-| **Question 2**       | Can we add a pet with no name?                                              |               |
-| **Question 3**       | Can we update only one Raichu back to Pikachu?                              |               |
+| Learn                | Task                                                                    | SQL / Answers                                             |
+| -------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------- |
+| Setup                | **Drop** pet table<br>**Re-create** pet table with name field           | `DROP TABLE pet`<br>`CREATE TABLE pet (name CHAR(20));`   |
+| Query all            | **List** all records in pet table<br><br>* Use to verify changes below: | `SELECT * FROM pet;`                                      |
+| Insert a row         | **Add** 'Pikachu' to pet table<br><br>*(Field names are optional)*      | `INSERT INTO pet VALUES ('Pikachu');`                     |
+| Insert multiple rows | **Add** 'Squirtle' and 'Charmander'<br><br>*(Specify field names)*      | `INSERT INTO pet () VALUES ('Squirtle'), ('Charmander');` |
+| Update a row         | Pikachu has evolved to Raichu.<br>**Update** 'Pikachu' to 'Raichu'      | `UPDATE pet SET name= 'Raichu' WHERE name = 'Pikachu';`   |
+| Delete a row         | **Delete** 'Charmander'                                                 | `DELETE FROM pet WHERE name = 'Charmander'`               |
+| **Question 1**       | Can we add another 'Raichu'?<br>                                        | yes, as there is no `UNIQUE` constraint.                  |
+| **Question 2**       | Can we add a pet with no name?                                          | yes                                                       |
+| **Question 3**       | Can we update only one Raichu back to Pikachu?                          |                                                           |
 ## 3. Primary key (PK)
 
 Use of  primary key
 
-| Learn                                   | Task                                                                                                             | SQL / Answers |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------- |
-| Setup                                   | Drop pet table<br>                                                                                               |               |
-| Set primary key                         | **Add** id as a *primary key*                                                                                    |               |
-| Insert a row with PK                    | **Add** 'Pikachu' with id=1                                                                                      |               |
-| Insert multiple rows                    | **Add** 'Squirtle' and 'Charmander'                                                                              |               |
-| Insert multiple rows with same field    | **Add** two more 'Pikachu'                                                                                       |               |
-| Update a row by PK                      | The first Pikachu refused to evolve, evolve the second Pikachu<br><br>**Update** the third 'Pikachu' to 'Raichu' |               |
-| Select rows                             | **List** all rows of 'Pikachu'                                                                                   |               |
-| Select single rows by PK                | **Select** specific 'Pikachu' with id=1                                                                          |               |
-| Delete a row by PK                      | **Delete** the first 'Pikachu'                                                                                   |               |
-| Drop primary key                        | **Drop** the primary key (id)                                                                                    |               |
-| Fail to add primary key when not unique | Try adding name as **primary key**<br><br>*(Fail: name not unique)*                                              |               |
-| Add primary key                         | Add id as **primary key** again<br><br>*(Succeed!)*                                                              |               |
-| Add composite PK                        | **Drop PK and add** (id, name) as PK again                                                                       |               |
-| Test composite PK                       | **Add** 'Pikachu' with id=9<br><br>*(Fail: violate PK)*                                                          |               |
-| Test composite PK 2                     | **Add** 'Squirtle' with id=9                                                                                     |               |
-| **Question 1**                          | Can you add another pets with id=2?                                                                              |               |
-| **Question 2**                          | What is the purpose of primary key?                                                                              |               |
-| **Question 3**                          | Is the primary key meaningful?                                                                                   |               |
-| **Question 4**                          | How to set arbitrary primary key easily?                                                                         |               |
-| **Question 5**                          | Can the primary key be meaning? Give an example.                                                                 |               |
+| Learn                                   | Task                                                                                                             | SQL / Answers                                                |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Setup                                   | Drop pet table<br>                                                                                               | `DROP TABLE pet; `                                           |
+| Set primary key                         | **Create** table and set id as a *primary key*                                                                   | `CREATE TABLE pet (id INT PRIMARY KEY, name CHAR(20));`      |
+| Insert a row with PK                    | **Add** 'Pikachu' with id=1                                                                                      | `INSERT INTO pet (name, id) VALUES ('Pikachu', 1);`          |
+| Insert multiple rows                    | **Add** 'Squirtle' and 'Charmander'                                                                              | `INSERT INTO pet VALUES (2, 'Squirtle'), (3, 'Charmander');` |
+| Insert multiple rows with same field    | **Add** two more 'Pikachu'                                                                                       |                                                              |
+| Update a row by PK                      | The first Pikachu refused to evolve, evolve the second Pikachu<br><br>**Update** the third 'Pikachu' to 'Raichu' |                                                              |
+| Select rows                             | **List** all rows of 'Pikachu'                                                                                   |                                                              |
+| Select single rows by PK                | **Select** specific 'Pikachu' with id=1                                                                          |                                                              |
+| Delete a row by PK                      | **Delete** the first 'Pikachu'                                                                                   |                                                              |
+| Drop primary key                        | **Drop** the primary key (id)                                                                                    |                                                              |
+| Fail to add primary key when not unique | Try adding name as **primary key**<br><br>*(Fail: name not unique)*                                              |                                                              |
+| Add primary key                         | Add id as **primary key** again<br><br>*(Succeed!)*                                                              |                                                              |
+| Add composite PK                        | **Drop PK and add** (id, name) as PK again                                                                       |                                                              |
+| Test composite PK                       | **Add** 'Pikachu' with id=9<br><br>*(Fail: violate PK)*                                                          |                                                              |
+| Test composite PK 2                     | **Add** 'Squirtle' with id=9                                                                                     |                                                              |
+| **Question 1**                          | Can you add another pets with id=2?                                                                              |                                                              |
+| **Question 2**                          | What is the purpose of primary key?                                                                              |                                                              |
+| **Question 3**                          | Is the primary key meaningful?                                                                                   |                                                              |
+| **Question 4**                          | How to set arbitrary primary key easily?                                                                         |                                                              |
+| **Question 5**                          | Can the primary key be meaning? Give an example.                                                                 |                                                              |
 
 ## 4. AUTO_INCREMENT
 
