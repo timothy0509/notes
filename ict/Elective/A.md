@@ -16,7 +16,7 @@
 > `WHERE` is used to filter the records **before** categorisation, while `HAVING` is used to filter the categories **after** categorisation.
 
 > [!warning] use aggregation function
-> ```bash
+> ```sql
 > MariaDB [ict]> SELECT NAME, MAX(SCORE2) FROM STUDENT;
 > +------+-------------+
 > | NAME | MAX(SCORE2) |
