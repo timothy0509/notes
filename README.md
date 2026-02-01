@@ -11,3 +11,5 @@ This repository contains notes organized by subject:
 - **economics/** - Economics notes
 - **bafs/** - Business, Accounting and Financial Studies notes
 - **ict/** - Information and Communication Technology notes
+
+Test commit
