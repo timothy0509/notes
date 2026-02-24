@@ -104,3 +104,20 @@ Process of reducing data redundancy and preventing update anomalies.
 - Backup and recovery management (Full vs. Incremental).
 - Defining the **Data Dictionary** (Metadata about tables, types, and constraints).
 
+## Chapter 4: Relational Database
+This chapter contains a lot of buzzwords, so notes are important here.
+### Concept of a Relational Database
+**Relational databases** organises data in **tabular form** (tables). A table consists of columns and rows. Each row is a **record**.
+
+The elements of a relational database are usually stored as or represented by different elements in a **Database Management System** (DBMS).
+
+> [!info] Elements of a relational database and their counterparts in a DBMS
+> | Relational Database | DBMS                    |
+> | ------------------- | ----------------------- |
+> | Entity type         | Table                   |
+> | Entity              | Record                  |
+> | Attribute           | Field                   |
+> | Relationship        | Foreign key             |
+> | Domain              | Datatype and constraint |
+> *Table 4.1* Elements of a relational database
+
