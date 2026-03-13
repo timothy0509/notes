@@ -5,5 +5,6 @@
   "encore-settings@@encore-translucency-strength": 0.3,
   "encore-settings@@encore-translucency-background": "encore-bg-chromatic",
   "encore-settings@@encore-highlight-border": true,
-  "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-sky"
+  "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-sky",
+  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-sapphire"
 }
