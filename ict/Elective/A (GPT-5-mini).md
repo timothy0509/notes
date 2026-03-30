@@ -1,17 +1,3 @@
----
-aliases: ["A headings"]
-tags: [Elective, SQL, ICT]
----
-
-Subagent assignments (each top-level heading handled by a subagent):
-
-- Subagent 1: `Managing Data Using SQL` (core SQL and schema)
-- Subagent 2: `SQL Operators and Functions` (operators, built-ins, aggregation)
-- Subagent 3: `SQL Operations on Multiple Tables` (joins, subqueries, combining results)
-- Subagent 4: `Relational Database` (ER concepts, integrity, schema)
-
----
-
 # Managing Data Using SQL
 
 Clear, exam-focused notes covering practical SQL usage: database creation, table structure, data manipulation, constraints, and schema changes. Use the examples with a sample `students` and `courses` dataset.
@@ -692,12 +678,9 @@ COMMIT;
 
 ---
 
-Exam tips
+# Database Design and ER Diagram
+## ER Diagram
+An **Entity-Relationship diagram** can represent the elements in a database.
 
-- Learn core DDL and DML statements with syntax and common options.
-- Practice by building small schemas (`students`, `courses`, `enrollment`) and writing queries (joins, aggregates, subqueries).
-- For exams: always state assumptions, show sample output for SELECT queries, and remember to use `WHERE` with `UPDATE`/`DELETE`.
-
-Further study
-
-- Transactions and isolation levels, query optimization, normalization forms, stored procedures and triggers.
+![[Untitled-2026-02-05-1046.png]]
+Example ER diagram
