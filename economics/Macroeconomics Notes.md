@@ -1,7 +1,16 @@
+---
+title: Macroeconomics Notes
+subject: Economics
+tags: [economics, macroeconomics, notes]
+status: complete
+---
+
 # Chapter 1: National Income (I)
 ## Gross Domestic Product (GDP) as a measure of income
 ### Definition of GDP
-GDP is the **total market value** of production of all **resident producing units** of a region in a specific period.
+
+> [!note] Definition
+> ==GDP== is the **total market value** of production of all **resident producing units** of a region in a specific period.
 #### Criteria for something to be part of GDP
 1. Corresponding production
 2. Producing unit: must be a resident producing unit
@@ -32,45 +41,58 @@ $$
 \text{GDP at market prices} = \text{GDP at factor cost} + \text{Indirect taxes} - \text{Subsidies}
 $$
 ## Gross National Product (GNP) as a measure of national income
-Gross National Product is the **total market value** of production of all **residents** of a region in a specific period.
+> [!note] Definition
+> ==Gross National Product== is the **total market value** of production of all **residents** of a region in a specific period.
 
 $$
-\text{GNP} = \text{GDP} + \text{factor income from abroad} - \text{factor income paid abroad}
+\text{==GNP==} = \text{==GDP==} + \text{factor income from abroad} - \text{factor income paid abroad}
 $$
 # Chapter 2: National Income (II)
 ## Measurement of national income statistics
 ### Nominal GDP and Real GDP
 #### Nominal GDP
-Nominal GDP is the GDP evaluated at the market prices of the **current period**.
+
+> [!note] Definition
+> ==Nominal GDP== is the GDP evaluated at the market prices of the **current period**.
 $$
-\text{Nominal GDP} = \sum{Q*P_c}
+\text{==Nominal GDP==} = \sum{Q*P_c}
 $$
 #### Real GDP
-Real GDP is the GDP evaluated at the market prices of the **base period**. 
+
+> [!note] Definition
+> ==Real GDP== is the GDP evaluated at the market prices of the **base period**. 
 $$
-\text{Real GDP} = \sum{Q*P_b}
+\text{==Real GDP==} = \sum{Q*P_b}
 $$
 ### Per capita GDP
 $$
-\text{Per capita GDP} = \frac{\text{GDP}}{\text{Population}}
+\text{==Per capita GDP==} = \frac{\text{GDP}}{\text{Population}}
 $$
-Per capita GDP can **eliminate the effects of population size** on the national income comparison.
+
+> [!note] Definition
+> ==Per capita GDP== can **eliminate the effects of population size** on the national income comparison.
 ### Full employment GDP
-Full employment GDP is the estimated GDP **when an economy uses its resources efficiently**.
+
+> [!note] Definition
+> ==Full employment GDP== is the estimated GDP **when an economy uses its resources efficiently**.
 
 ## Uses of national income statistics
 - To reflect the economic performance of an economy
 - To reflect the general living standard of the people
 - To reflect structure of the economy
 ## Limitations of national income statistics
-- Difference in **the general price level**
-- Difference in **population size**
-- Difference in **income distribution**
-- DIfference in **composition of GDP**
-- **Non-market** production activities
-- **Negative externalities**
-- **Quality** of output
-- Amount of **leisure**
+
+> [!warning] Limitations
+> - Difference in **the general price level**
+> - Difference in **population size**
+> - Difference in **income distribution**
+> - DIfference in **composition of GDP**
+> - **Non-market** production activities
+> - **Negative externalities**
+> - **Quality** of output
+> - Amount of **leisure**
 # Chapter 3: Unemployment and the General Price Level
 ## Unemployment
 ### Unemployment rate and underemployment rate
+
+Related: [[Microeconomics Notes]]

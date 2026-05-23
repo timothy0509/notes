@@ -1,3 +1,9 @@
+---
+title: Compulsory D - Problem Formulation and Algorithms
+subject: ICT
+tags: [ict, compulsory, algorithms, problem-solving]
+status: complete
+---
 # Problem-Fomulation and Analysis 
 ## Define a Problem
 define a problem and its scope
@@ -5,7 +11,7 @@ define a problem and its scope
 The Input-Process-Output cycle
 ## Decompose a Problem
 Decomposition: Breaking down problems into ==smaller and more manageable== Sub-problems using a ==top-down==/==divide-and-conquer== approach
->[!tip] Stepwise Refinement
+>[!tip] ==Stepwise Refinement==
 >This process involves further breaking down sub-problems into several smaller steps.
 >```mermaid
 >	flowchart TD
@@ -23,34 +29,34 @@ Use wireframes to draft the user interface of the program and the components to 
 There are 5 steps to solving problems.
 1. Problem definition
 2. Problem analysis
-3. Algorithm design
+3. ==Algorithm== design
 4. Program development
 5. Testing and debugging
 Throughout these 5 steps, **documentation** is done.
-# Algorithm Design
+# ==Algorithm== Design
 An ==algorithm== is a set of steps for solving a problem in the specified order. 
-Buzzword: ==dry run==: deduce the purpose and output of an algorithm or a program.
-## Pseudocode and flowcharts
-==Pseudocode== uses simple words/==statements== to express an algorithm
-==Flowchart== uses specific shapes and links them to express an algorithm.
+Buzzword: ==dry run==: deduce the purpose and output of an ==algorithm== or a program.
+## ==Pseudocode== and ==flowcharts==
+==Pseudocode== uses simple words/==statements== to express an ==algorithm==
+==Flowchart== uses specific shapes and links them to express an ==algorithm==.
 ### Start/end of the algorithm
 ```mermaid
 flowchart TD
 A([Start]) --> B([End])
 ```
-Such expressions are not necessary in pseudocode.
+Such expressions are not necessary in ==pseudocode==.
 ### Assignment
 ```
 A <- 21
 B <- A
 B <- B + 1
 ```
-Rectangles are used for assignments in flowcharts.
+Rectangles are used for assignments in ==flowcharts==.
 ### Input and Output
 ```
 Input A, B
 ```
-Parallelograms are used for assignments in flowcharts.
+Parallelograms are used for assignments in ==flowcharts==.
 ### Decisions / Conditions
 ```
 if A = B then
@@ -58,12 +64,12 @@ if A = B then
 else
 	...
 ```
-Rhombuses are used for conditions in flowcharts.
+Rhombuses are used for conditions in ==flowcharts==.
 ### Module / functions (rarely tested)
 ```
 Call ProcedureABC
 ```
-Rectangles with double side borders are used for calling modules in flowcharts.
+Rectangles with double side borders are used for calling modules in ==flowcharts==.
 ## Variables
 Variables store data.
 ### Naming rules
@@ -83,16 +89,18 @@ Test data is specifically chosen and usually includes
 - ==Boundary data values/boundary cases==, which refer to some extreme data values.
 ## Program Errors and Debugging
 ### Three types of program errors
-#### Syntax error
+====Syntax error====
 This happens when a code breaks the rules of the programming language, such as
 - missing colons
 - misspelt keywords
 - capitalisation errors
 - missing indents or brackets
-#### Logic error
+====Logic error====
 No error messages are shown and the program still works. but it will function abnormally and/or gives wrong results.
-#### Run-time error
+====Run-time error====
 The program encounters a problem that leads to an unexpected termination, such as
 - dividing a number by zero
 - calculating the square root of a negative number
 - accessing an item outside the range of array index
+
+Related: [[Compulsory C2]]
