@@ -1,8 +1,15 @@
+---
+title: Microeconomics - Chapters 1-5
+subject: Economics
+tags: [economics, microeconomics, summary]
+status: complete
+---
+
 ## Chapter 1
-> [!info] **Scarcity**
+> [!info] **==Scarcity==**
 > When limited resources are insufficient to satisfy unlimited wants
 
-### Economic goods vs. Free goods
+### ==Economic goods== vs. ==Free goods==
 - is the good scarce?
 - At zero price, does $Q_d>Q_s$?
 - Is more of it preferred to less?
@@ -22,7 +29,7 @@
 - market price is an incentive for production, as producers receive market price of goods as income.
 - market price serves as a signal to inform producers of what to produce
 - price determines who gets the goods, as those who are willing and able to pay the market price will get the goods.
-### Private property rights
+### ==Private property rights==
 - exclusive right to use
 - exclusive right to receive income from
 - right to transfer
@@ -81,7 +88,7 @@ $$\text{Labour productivity (Units of output per man-hour)}=\frac{\text{Total ou
 **Occupational mobility** of labour refers to the willingness and mobility of a worker to move from one occupation to another. 
 > [!info] Factors affecting occupational mobility
 > Personal level:
-> - Wage difference (amount of income forgone, affecting opportunity cost of changing occupation)
+> - Wage difference (amount of income forgone, affecting ==opportunity cost== of changing occupation)
 > - Whether skills are transferable/specialised
 >
 > Non-personal level: 
@@ -122,7 +129,7 @@ advantages (same as piece rate):
 ### Division of labour
 Also referred to as specialisation of labour, each worker specialises in producing a particular good or a particular stage of a good.
 
-> [!faq] How does division of labour increase productivity?
+> [!question] How does division of labour increase productivity?
 > - practice makes perfect
 > - save time in training
 > - save time in changing tasks
@@ -170,3 +177,5 @@ A production period with variable factors only.
 #### External diseconomies of scale
 - when an industry develops quickly, the demand for related input will increase, pushing up input prices
 - the market may be saturated, leading to rise in marketing cost
+
+Related: [[Microeconomics Notes]]

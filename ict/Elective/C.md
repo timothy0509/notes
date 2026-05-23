@@ -1,3 +1,9 @@
+---
+title: Elective C - Program Errors and Data Structures
+subject: ICT
+tags: [ict, elective, errors, data-structures]
+status: complete
+---
 ## Chapter 2
 ### Types of program errors
 #### Overflow errors
@@ -20,12 +26,14 @@ $$
 $$
 > [!info] Other errors
 > These errors are mentioned in Compulsory D 6.2.
-> - **Syntax errors**
-> - **Logical errors**
-> - **Run-time errors**
+> - ==**Syntax errors**==
+> - ==**Logical errors**==
+> - ==**Run-time errors**==
 > 	- Dividing a number by zero
 > 	- Calculating the square root of a negative number
 > 	- Accessing an item outside the range of the array index
+
+See: [[Compulsory D]]
 
 ## Chapter 4
 ### Subprograms

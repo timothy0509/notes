@@ -1,3 +1,9 @@
+---
+title: Chapter 14 - Efficiency, Equity and the Role of Government
+subject: Economics
+tags: [economics, externalities, equity]
+status: draft
+---
 # Efficiency, Equity, and the Role of Government
 ## Externalities
 **External costs** are incurred when an action effects others without compensating (negative) or paid (positive).
