@@ -1,16 +1,27 @@
 ---
 title: BAFS Book 4 - Complete Summaries
 date: 2026-03-19
-tags: [BAFS, accounting, summaries, complete]
+tags:
+  - BAFS
+  - accounting
+  - summaries
+  - complete
+  - financial-analysis
+  - cost-accounting
+  - CVP
+aliases:
+  - BAFS Book 4 Summary
+  - Accounting Chapters 21-27
 ---
 
 # BAFS Book 4 - Complete Summaries
 
-Complete summaries of Chapters 21, 22, 24, 25, 26, and 27 from BAFS Book 4.
+> [!abstract] Overview
+> Complete summaries of Chapters 21, 22, 24, 25, 26, and 27 from BAFS Book 4.
 
 ---
 
-# Chapter 21: Financial Analysis
+# Chapter 21: Financial Analysis ^ch21
 
 ## Concept Map
 
@@ -56,58 +67,60 @@ mindmap
 
 ---
 
-## 1. Profitability Ratios (Section 21.3)
+## 1. Profitability Ratios (Section 21.3) ^profitability
 
-Profitability measures the ability of a business to earn profits.
+> [!tip] Key Insight
+> Profitability measures the ability of a business to earn profits.
 
 | Ratio | Formula | Interpretation |
 |-------|---------|----------------|
-| **Gross Profit Ratio** | (Gross profit / Sales) × 100% | Higher ratio means sales are more profitable |
-| **Mark-up** | (Gross profit / Cost of goods sold) × 100% | Higher mark-up means more profitable |
-| **Net Profit Ratio** | (Net profit before tax / Sales) × 100% | Higher ratio = greater ability to generate profits |
-| **Return on Capital Employed** | (PBIT / Average capital employed) × 100% | Higher = more capable of generating profits |
+| **Gross Profit Ratio** | $\frac{\text{Gross profit}}{\text{Sales}} \times 100\%$ | Higher ratio means sales are more profitable |
+| **Mark-up** | $\frac{\text{Gross profit}}{\text{Cost of goods sold}} \times 100\%$ | Higher mark-up means more profitable |
+| **Net Profit Ratio** | $\frac{\text{Net profit before tax}}{\text{Sales}} \times 100\%$ | Higher ratio = greater ability to generate profits |
+| **Return on Capital Employed** | $\frac{\text{PBIT}}{\text{Average capital employed}} \times 100\%$ | Higher = more capable of generating profits |
 
 ---
 
-## 2. Liquidity Ratios (Section 21.4)
+## 2. Liquidity Ratios (Section 21.4) ^liquidity
 
-Liquidity measures the ability to meet short-term financial obligations when due.
+> [!info] Definition
+> Liquidity measures the ability to meet short-term financial obligations when due.
 
 | Ratio | Formula | Interpretation |
 |-------|---------|----------------|
-| **Current Ratio** | Current assets / Current liabilities | Higher = more liquid |
-| **Quick Ratio** | (Current assets - Inventory) / Current liabilities | Stringent liquidity test |
-| **Trade Receivables Turnover** | Credit sales / Average trade receivables | Measures receivables relative to sales |
-| **Average Collection Period** | (Avg trade receivables / Credit sales) × 365 days | Shorter = faster collection |
-| **Trade Payables Turnover** | Credit purchases / Average trade payables | Measures payables relative to purchases |
-| **Average Repayment Period** | (Avg trade payables / Credit purchases) × 365 days | Shorter = faster repayment |
-| **Inventory Turnover** | Cost of goods sold / Average inventory | Higher = faster selling inventory |
+| **Current Ratio** | $\frac{\text{Current assets}}{\text{Current liabilities}}$ | Higher = more liquid |
+| **Quick Ratio** | $\frac{\text{Current assets} - \text{Inventory}}{\text{Current liabilities}}$ | Stringent liquidity test |
+| **Trade Receivables Turnover** | $\frac{\text{Credit sales}}{\text{Average trade receivables}}$ | Measures receivables relative to sales |
+| **Average Collection Period** | $\frac{\text{Avg trade receivables}}{\text{Credit sales}} \times 365 \text{ days}$ | Shorter = faster collection |
+| **Trade Payables Turnover** | $\frac{\text{Credit purchases}}{\text{Average trade payables}}$ | Measures payables relative to purchases |
+| **Average Repayment Period** | $\frac{\text{Avg trade payables}}{\text{Credit purchases}} \times 365 \text{ days}$ | Shorter = faster repayment |
+| **Inventory Turnover** | $\frac{\text{Cost of goods sold}}{\text{Average inventory}}$ | Higher = faster selling inventory |
 
 ---
 
-## 3. Solvency Ratio (Section 21.5)
+## 3. Solvency Ratio (Section 21.5) ^solvency
 
 | Ratio | Formula | Interpretation |
 |-------|---------|----------------|
-| **Gearing Ratio** | (Non-current liabilities + Preference capital) / (Non-current liabilities + Shareholders' fund) × 100% | Higher = riskier business |
+| **Gearing Ratio** | $\frac{\text{Non-current liabilities} + \text{Preference capital}}{\text{Non-current liabilities} + \text{Shareholders' fund}} \times 100\%$ | Higher = riskier business |
 
 ---
 
-## 4. Management Efficiency Ratios (Section 21.6)
+## 4. Management Efficiency Ratios (Section 21.6) ^efficiency
 
 | Ratio | Formula | Interpretation |
 |-------|---------|----------------|
-| **Total Assets Turnover** | Sales / Total assets | Higher = more efficient asset use |
+| **Total Assets Turnover** | $\frac{\text{Sales}}{\text{Total assets}}$ | Higher = more efficient asset use |
 
 ---
 
-## 5. Return on Investment Ratios (Section 21.7)
+## 5. Return on Investment Ratios (Section 21.7) ^roi
 
 | Ratio | Formula | Interpretation |
 |-------|---------|----------------|
-| **Earnings per Share (EPS)** | (NPAT - Preference dividend) / Number of ordinary shares | Higher = better return potential |
-| **Dividend Cover** | (NPAT - Preference dividend) / Ordinary dividend | Higher = smaller proportion distributed |
-| **Price-earnings Ratio (P/E)** | Market price per share / EPS | High = sell signal; Low = buy signal |
+| **Earnings per Share (EPS)** | $\frac{\text{NPAT} - \text{Preference dividend}}{\text{Number of ordinary shares}}$ | Higher = better return potential |
+| **Dividend Cover** | $\frac{\text{NPAT} - \text{Preference dividend}}{\text{Ordinary dividend}}$ | Higher = smaller proportion distributed |
+| **Price-earnings Ratio (P/E)** | $\frac{\text{Market price per share}}{\text{EPS}}$ | High = sell signal; Low = buy signal |
 
 ---
 
@@ -122,7 +135,7 @@ Liquidity measures the ability to meet short-term financial obligations when due
 
 ---
 
-# Chapter 22: Incomplete Records
+# Chapter 22: Incomplete Records ^ch22
 
 ## Concept Map
 
@@ -155,7 +168,8 @@ mindmap
 
 ## Overview
 
-When businesses don't maintain complete double-entry systems, we calculate missing figures.
+> [!warning] Context
+> When businesses don't maintain complete double-entry systems, we calculate missing figures.
 
 ---
 
@@ -191,26 +205,30 @@ When businesses don't maintain complete double-entry systems, we calculate missi
 
 ---
 
-## Key Formulas
+## Key Formulas ^key-formulas-ir
 
-### Credit Sales
-```
-Credit sales = (Closing trade receivables × Trade receivables turnover)
-            OR
-Credit sales = (Average trade receivables × 365) / Average collection period
-```
+### Credit Sales ^credit-sales
+$$
+\begin{aligned}
+\text{Credit sales} &= (\text{Closing trade receivables} \times \text{Trade receivables turnover}) \\
+&\text{OR} \\
+&= \frac{\text{Average trade receivables} \times 365}{\text{Average collection period}}
+\end{aligned}
+$$
 
-### Credit Purchases
-```
-Credit purchases = (Closing trade payables × Trade payables turnover)
-                OR
-Credit purchases = (Average trade payables × 365) / Average repayment period
-```
+### Credit Purchases ^credit-purchases
+$$
+\begin{aligned}
+\text{Credit purchases} &= (\text{Closing trade payables} \times \text{Trade payables turnover}) \\
+&\text{OR} \\
+&= \frac{\text{Average trade payables} \times 365}{\text{Average repayment period}}
+\end{aligned}
+$$
 
-### Net Profit/Loss
-```
-Net profit/(loss) = Closing capital - Opening capital + Drawings - Additional capital
-```
+### Net Profit/Loss ^net-profit-ir
+$$
+\text{Net profit/(loss)} = \text{Closing capital} - \text{Opening capital} + \text{Drawings} - \text{Additional capital}
+$$
 
 ---
 
@@ -224,21 +242,23 @@ Net profit/(loss) = Closing capital - Opening capital + Drawings - Additional ca
 
 ---
 
-## Manager's Commission
+## Manager's Commission ^managers-commission
+
+> [!example] Formulas
 
 **Before commission:**
-```
-Commission = Commission % × Net profit before commission
-```
+$$
+\text{Commission} = \text{Commission \%} \times \text{Net profit before commission}
+$$
 
 **After commission:**
-```
-Commission = (Commission % / (100 + Commission %)) × Net profit before commission
-```
+$$
+\text{Commission} = \left(\frac{\text{Commission \%}}{100 + \text{Commission \%}}\right) \times \text{Net profit before commission}
+$$
 
 ---
 
-# Chapter 24: Cost Accounting
+# Chapter 24: Cost Accounting ^ch24
 
 ## Concept Map
 
@@ -279,11 +299,10 @@ mindmap
 
 ## Overview
 
-**Cost accounting** is the process of recording, tracking, and analyzing costs associated with a cost object.
+> [!note] Definition
+> **Cost accounting** is the process of recording, tracking, and analyzing costs associated with a cost object.
 
----
-
-## Cost Classifications
+## Cost Classifications ^cost-classifications
 
 ### 1. Direct and Indirect Costs (Section 24.3A)
 
@@ -312,31 +331,31 @@ mindmap
 
 ---
 
-## Cost Terms
+## Cost Terms ^cost-terms
 
 | Term | Formula |
 |------|---------|
-| **Prime cost** | Direct materials + Direct labour |
-| **Conversion cost** | Direct labour + Manufacturing overheads |
-| **Total costs** | DM + DL + Expenses = Prime cost + Overheads |
+| **Prime cost** | $\text{Direct materials} + \text{Direct labour}$ |
+| **Conversion cost** | $\text{Direct labour} + \text{Manufacturing overheads}$ |
+| **Total costs** | $\text{DM} + \text{DL} + \text{Expenses} = \text{Prime cost} + \text{Overheads}$ |
 
 ---
 
-## High-Low Method
+## High-Low Method ^high-low
 
 **Step 1:** Variable cost per unit
-```
-Variable cost per unit = (Cost at high - Cost at low) / (High activity - Low activity)
-```
+$$
+\text{Variable cost per unit} = \frac{\text{Cost at high} - \text{Cost at low}}{\text{High activity} - \text{Low activity}}
+$$
 
 **Step 2:** Fixed costs
-```
-Fixed costs = Total costs - (Variable cost per unit × Activity level)
-```
+$$
+\text{Fixed costs} = \text{Total costs} - (\text{Variable cost per unit} \times \text{Activity level})
+$$
 
 ---
 
-# Chapter 25: Absorption and Marginal Costing
+# Chapter 25: Absorption and Marginal Costing ^ch25
 
 ## Concept Map
 
@@ -389,17 +408,21 @@ mindmap
 
 ---
 
-## Absorption Costing
+## Absorption Costing ^absorption
 
 ### Overhead Absorption
-```
-Predetermined rate = Budgeted overheads / Budgeted quantity of absorption base
-Absorbed overheads = Actual quantity × Predetermined rate
-```
+$$
+\text{Predetermined rate} = \frac{\text{Budgeted overheads}}{\text{Budgeted quantity of absorption base}}
+$$
+$$
+\text{Absorbed overheads} = \text{Actual quantity} \times \text{Predetermined rate}
+$$
 
 ### Over/Under-absorption
-- **Over-absorption:** Actual < Absorbed → Deduct from COGS
-- **Under-absorption:** Actual > Absorbed → Add to COGS
+
+> [!tip] Rule
+> - **Over-absorption:** Actual < Absorbed → Deduct from COGS
+> - **Under-absorption:** Actual > Absorbed → Add to COGS
 
 ### Income Statement
 | | $ |
@@ -449,7 +472,7 @@ Absorbed overheads = Actual quantity × Predetermined rate
 
 ---
 
-# Chapter 26: Cost-Volume-Profit Analysis
+# Chapter 26: Cost-Volume-Profit Analysis ^ch26-cvp
 
 ## Concept Map
 
@@ -458,21 +481,21 @@ mindmap
   root((CVP Analysis))
     Key Concepts
       Breakeven Point
-        Where total costs = total revenue
-        No profit, no loss
+        Total costs equals total revenue
+        No profit no loss
       Contribution Margin
-        Sales - Variable costs
+        Sales minus Variable costs
       Margin of Safety
-        Actual sales - Breakeven sales
+        Actual sales minus Breakeven sales
     Calculations
       Breakeven Units
-        Fixed costs / Unit contribution margin
+        Fixed costs divided by Unit CM
       Breakeven Revenue
-        Fixed costs / Contribution margin ratio
+        Fixed costs divided by CM ratio
       Target Profit
-        (Target profit + Fixed costs) / Unit CM
+        Target profit plus Fixed costs divided by Unit CM
       Margin of Safety
-        Actual - Breakeven
+        Actual minus Breakeven
     Applications
       Single Product
       Multiple Products
@@ -483,37 +506,61 @@ mindmap
 
 ---
 
-## Key Formulas
+## Key Formulas ^cvp-formulas
 
-### Breakeven Point
-```
-Breakeven (units) = Fixed costs / Unit contribution margin
-Breakeven (revenue) = Fixed costs / Contribution margin ratio
+### Breakeven Point ^breakeven
+$$
+\text{Breakeven (units)} = \frac{\text{Fixed costs}}{\text{Unit contribution margin}}
+$$
+$$
+\text{Breakeven (revenue)} = \frac{\text{Fixed costs}}{\text{Contribution margin ratio}}
+$$
 
-Unit contribution margin = Unit selling price - Unit variable cost
-Contribution margin ratio = (Unit CM / Unit selling price) × 100%
-```
+Where:
+$$
+\text{Unit contribution margin} = \text{Unit selling price} - \text{Unit variable cost}
+$$
+$$
+\text{Contribution margin ratio} = \frac{\text{Unit CM}}{\text{Unit selling price}} \times 100\%
+$$
 
-### Target Profit
-```
-Units for target profit = (Target profit + Fixed costs) / Unit contribution margin
-```
+### Target Profit ^target-profit
+$$
+\text{Units for target profit} = \frac{\text{Target profit} + \text{Fixed costs}}{\text{Unit contribution margin}}
+$$
 
-### Margin of Safety
-```
-In dollars: Actual/Budgeted sales - Breakeven sales
-In units: Actual/Budgeted units - Breakeven units
-Ratio: (Actual - Breakeven) / Actual × 100%
-```
+### Margin of Safety ^margin-of-safety
+$$
+\begin{aligned}
+\text{In dollars:} & \quad \text{Actual/Budgeted sales} - \text{Breakeven sales} \\
+\text{In units:} & \quad \text{Actual/Budgeted units} - \text{Breakeven units} \\
+\text{Ratio:} & \quad \frac{\text{Actual} - \text{Breakeven}}{\text{Actual}} \times 100\%
+\end{aligned}
+$$
 
 ---
 
 ## CVP for Multiple Products
 
 **Weighted average method:**
-```
-Breakeven (units) = Fixed costs / Weighted average unit contribution margin
-```
+$$
+\text{Breakeven (units)} = \frac{\text{Fixed costs}}{\text{Weighted average unit contribution margin}}
+$$
+
+## CVP with Limiting Factors ^limiting-factors
+
+**Steps:**
+1. Calculate contribution per unit of limiting factor
+2. Rank products from highest to lowest
+3. Produce highest-ranked products first
+
+**Formula:**
+$$
+\text{Contribution per unit of limiting factor} = \frac{\text{Unit contribution margin}}{\text{Amount of limiting factor per unit}}
+$$
+$$
+\text{Breakeven (units)} = \frac{\text{Fixed costs}}{\text{Weighted average unit contribution margin}}
+$$
 
 ---
 
@@ -531,7 +578,7 @@ Contribution per unit of limiting factor = Unit contribution margin / Amount of 
 
 ---
 
-# Chapter 27: Cost Accounting for Decision Making
+# Chapter 27: Cost Accounting for Decision Making ^ch27
 
 ## Concept Map
 
@@ -562,9 +609,9 @@ mindmap
 
 ---
 
-## Relevant Costs Framework
+## Relevant Costs Framework ^relevant-costs
 
-### Relevant (Consider These)
+### Relevant (Consider These) ^relevant
 | Type | Definition |
 |------|------------|
 | **Expected future revenues** | Revenues that will change |
@@ -573,7 +620,7 @@ mindmap
 | **Incremental costs** | Additional costs from action |
 | **Avoidable costs** | Costs that can be eliminated |
 
-### Irrelevant (Ignore These)
+### Irrelevant (Ignore These) ^irrelevant
 | Type | Definition |
 |------|------------|
 | **Sunk costs** | Already incurred, cannot recover |
@@ -582,16 +629,17 @@ mindmap
 
 ---
 
-## Decision-Making Process
+## Decision-Making Process ^decision-process
 
-1. **Only relevant costs matter** - Ignore sunk costs
-2. **Analyze all alternatives** - Impact on revenues, costs, profits
-3. **Two analysis methods:**
-   - Incremental (compare only differences)
-   - Total relevant (compare totals)
-4. **Decision rule:**
-   - Higher costs/lower profits → No action
-   - Lower costs/higher profits → Take action
+> [!important] Key Principles
+> 1. **Only relevant costs matter** - Ignore sunk costs
+> 2. **Analyze all alternatives** - Impact on revenues, costs, profits
+> 3. **Two analysis methods:**
+>    - Incremental (compare only differences)
+>    - Total relevant (compare totals)
+> 4. **Decision rule:**
+>    - Higher costs/lower profits → No action
+>    - Lower costs/higher profits → Take action
 
 ---
 
@@ -605,33 +653,51 @@ mindmap
 
 ---
 
-# Complete Formula Summary
+# Complete Formula Summary ^formula-summary
 
-## Financial Ratios
-```
-Gross Profit Ratio = (Gross profit / Sales) × 100%
-Current Ratio = Current assets / Current liabilities
-Gearing Ratio = (Non-current liabilities + Preference capital) / Total capital × 100%
-EPS = (NPAT - Preference dividend) / Number of ordinary shares
-```
+## Financial Ratios ^formula-ratios
+$$
+\text{Gross Profit Ratio} = \frac{\text{Gross profit}}{\text{Sales}} \times 100\%
+$$
+$$
+\text{Current Ratio} = \frac{\text{Current assets}}{\text{Current liabilities}}
+$$
+$$
+\text{Gearing Ratio} = \frac{\text{Non-current liabilities} + \text{Preference capital}}{\text{Total capital}} \times 100\%
+$$
+$$
+\text{EPS} = \frac{\text{NPAT} - \text{Preference dividend}}{\text{Number of ordinary shares}}
+$$
 
-## Incomplete Records
-```
-Net profit = Closing capital - Opening capital + Drawings - Additional capital
-Credit sales = (Average trade receivables × 365) / Collection period
-```
+## Incomplete Records ^formula-ir
+$$
+\text{Net profit} = \text{Closing capital} - \text{Opening capital} + \text{Drawings} - \text{Additional capital}
+$$
+$$
+\text{Credit sales} = \frac{\text{Average trade receivables} \times 365}{\text{Collection period}}
+$$
 
-## Cost Accounting
-```
-Contribution margin = Sales - Variable costs
-Breakeven point (units) = Fixed costs / Unit contribution margin
-High-low variable cost = (High cost - Low cost) / (High activity - Low activity)
-Prime cost = Direct materials + Direct labour
-Conversion cost = Direct labour + Manufacturing overheads
-```
+## Cost Accounting ^formula-cost
+$$
+\text{Contribution margin} = \text{Sales} - \text{Variable costs}
+$$
+$$
+\text{Breakeven point (units)} = \frac{\text{Fixed costs}}{\text{Unit contribution margin}}
+$$
+$$
+\text{High-low variable cost} = \frac{\text{High cost} - \text{Low cost}}{\text{High activity} - \text{Low activity}}
+$$
+$$
+\text{Prime cost} = \text{Direct materials} + \text{Direct labour}
+$$
+$$
+\text{Conversion cost} = \text{Direct labour} + \text{Manufacturing overheads}
+$$
 
-## Manager's Commission
-```
-Before commission: Commission % × Net profit before commission
-After commission: (Commission % / (100 + Commission %)) × Net profit before commission
-```
+## Manager's Commission ^formula-commission
+$$
+\text{Before commission: } \text{Commission \%} \times \text{Net profit before commission}
+$$
+$$
+\text{After commission: } \left(\frac{\text{Commission \%}}{100 + \text{Commission \%}}\right) \times \text{Net profit before commission}
+$$
