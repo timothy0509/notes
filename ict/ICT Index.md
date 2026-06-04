@@ -10,46 +10,70 @@ aliases:
 # ICT Index
 
 > [!abstract] Subject Overview
-> Information and Communication Technology (ICT) - DSE elective covering computing fundamentals, networking, databases, and programming.
+> Information and Communication Technology (ICT) - HKDSE elective covering computing fundamentals, networking, databases, and programming.
 
 ## Syllabus Overview
 
-See [[Syllabus]] for the full syllabus structure.
+| Part | Module | Hours | Status |
+|:-----|:-------|------:|:-------|
+| **Compulsory** | [[Compulsory/A\|A. Information Processing]] | 37 | ✅ Complete |
+| **Compulsory** | [[Compulsory/B\|B. Computer System Fundamentals]] | 20 | ✅ Complete |
+| **Compulsory** | [[Compulsory/C\|C. Internet and its Applications]] | 31 | ✅ Complete |
+| **Compulsory** | [[Compulsory/D\|D. Computational Thinking and Programming]] | 48 | ✅ Complete |
+| **Compulsory** | [[Compulsory/E\|E. Social Implications]] | 8 | ✅ Complete |
+| **Elective** | [[Elective/A\|A. Databases]] | 38 | ✅ Complete |
+| **Elective** | [[Elective/C\|C. Algorithm and Programming]] | 38 | ✅ Complete |
 
-## Compulsory Part
+## Compulsory Part (144 hours)
 
-### A: Information Processing
-- [[A2]] - Data control and organisation (validation, verification, check digits)
+### [[Compulsory/A|A: Information Processing]] (37 hours)
+- **(a)** Introduction to Information Processing (3h)
+- **(b)** Data Organisation and Data Control (4h)
+- **(c)** Data Representation (10h)
+- **(d)** Data Manipulation and Analysis (20h)
 
-### B: Computer System Fundamentals
-- *Notes pending*
+### [[Compulsory/B|B: Computer System Fundamentals]] (20 hours)
+- **(a)** Basic Machine Organisation (14h)
+- **(b)** System Software (6h)
 
-### C: Internet and its Applications
-- [[Compulsory C1]] - Networking basics (LAN/WAN, client-server, protocols)
-- [[Compulsory C2]] - Web authoring and network security (HTML, CSS, JavaScript)
+### [[Compulsory/C|C: Internet and its Applications]] (31 hours)
+- **(a)** Networking and Internet Basics (9h)
+- **(b)** Internet Services and Applications (5h)
+- **(c)** Elementary Web Authoring (3h)
+- **(d)** Threats and Security on the Internet (14h)
 
-### D: Computational Thinking and Programming
-- [[D]] - Problem formulation, algorithm design, pseudocode, flowcharts
+### [[Compulsory/D|D: Computational Thinking and Programming]] (48 hours)
+- **(a)** Problem-Formulation and Analysis (5h)
+- **(b)** Algorithm Design (12h)
+- **(c)** Program Development (20h)
+- **(d)** Program Testing and Debugging (11h)
 
-### E: Social Implications
-- *Notes pending*
+### [[Compulsory/E|E: Social Implications]] (8 hours)
+- **(a)** Technological Innovations (3h)
+- **(b)** Health and Ethical Issues (3h)
+- **(c)** Intellectual Property (2h)
 
-## Elective Part
+## Elective Part (76 hours)
 
-### A: Databases
-- [[Elective/A headings]] - SQL reference (CREATE, SELECT, JOIN, aggregation)
-- [[Elective/A]] - Database functions (text, date, aggregation, joins)
+> [!info] Choose Two Options
+> Students must choose two elective options for in-depth study.
+
+### [[Elective/A|A: Databases]] (38 hours)
+- **(a)** Relational Databases Concepts (6h)
+- **(b)** SQL (18h)
+- **(c)** Database Design Methodology (14h)
+
+### [[Elective/C|C: Algorithm and Programming]] (38 hours)
+- **(a)** Programming (32h)
+- **(b)** Applications of Programming in Real Life (6h)
+
+## Practice
+
 - [[Database Class Practice]] - SQL practice exercises
-- [[Elective/Elective A Chapters 4-5]] - Database systems and design (ER diagrams, normalization)
 
-### C: Algorithm and Programming
-- [[Elective/C]] - Program errors (overflow, truncation, rounding), numerical methods
+## Cross-References
 
-## Trial SBA
-- [[ER Diagram]] - Entity-relationship diagram for the todo app SBA
-- `backend/` - Flask backend implementation
-
-## Key Cross-References
-- The [[D]] IPO cycle relates to [[Compulsory C1#Client-server network|client-server]] request-response patterns
-- [[Elective/C#Numerical Errors]] references [[A2#3.1|Compulsory A 3.1]] for two's complement
-- [[Database Class Practice]] applies concepts from [[Elective/A headings]]
+- [[Compulsory/D#Problem Solving|IPO cycle]] relates to [[Compulsory/C#Networking Fundamentals|client-server]] request-response patterns
+- [[Elective/C#Numerical Errors]] references [[Compulsory/A#Data Representation|two's complement]]
+- [[Database Class Practice]] applies concepts from [[Elective/A#SQL Fundamentals]]
+- [[Compulsory/E]] addresses ethics across all modules

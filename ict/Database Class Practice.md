@@ -14,7 +14,7 @@ aliases:
 
 ## 1. Create database and table
 > [!info] Related
-> See [[Elective/A headings]] for SQL syntax reference and [[ER Diagram]] for the entity-relationship model.
+> See [[Elective/A]] for SQL syntax reference and [[Trial SBA/ER Diagram]] for the entity-relationship model.
 
 Create a fakermon database with a single table of monsters' names.
 
