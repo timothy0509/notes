@@ -1,3 +1,14 @@
+---
+tags:
+  - bafs
+  - accounting
+  - formula
+  - reference
+aliases:
+  - Accounting Formula Sheet
+date: 2026-06-04
+---
+
 > [!tip] Taking the average
 > for some values in some of the formulas, the average balance of something is required. In these scenarios, take average of the balances of the current year and the previous year.
 
@@ -56,3 +67,10 @@ $$
 $$
 \text{price-earnings ratio}=\frac{\text{current price per ordinary share}}{\text{earnings per share}}
 $$
+
+---
+
+## Related
+
+- [[BAFS Book 4 - Complete Summaries]] - Full chapter summaries with detailed explanations of these ratios
+- [[BAFS Index]] - Subject overview and navigation

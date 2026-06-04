@@ -1,6 +1,20 @@
+---
+tags:
+  - ict
+  - elective
+  - database
+  - sql
+  - practice
+aliases:
+  - SQL Practice
+  - Database Practice
+---
+
 # Practice
 
 ## 1. Create database and table
+> [!info] Related
+> See [[Elective/A headings]] for SQL syntax reference and [[ER Diagram]] for the entity-relationship model.
 
 Create a fakermon database with a single table of monsters' names.
 

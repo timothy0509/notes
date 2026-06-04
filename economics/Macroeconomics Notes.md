@@ -1,3 +1,11 @@
+---
+tags:
+  - economics
+  - macroeconomics
+  - notes
+date: 2026-06-04
+---
+
 # Chapter 1: National Income (I)
 ## Gross Domestic Product (GDP) as a measure of income
 ### Definition of GDP
@@ -74,3 +82,11 @@ Full employment GDP is the estimated GDP **when an economy uses its resources ef
 # Chapter 3: Unemployment and the General Price Level
 ## Unemployment
 ### Unemployment rate and underemployment rate
+
+---
+
+## Related
+
+- [[Microeconomics Notes]] - Microeconomics counterpart
+- [[Chapter 14]] - Externalities and government efficiency
+- [[Economics Index]] - Subject overview and navigation

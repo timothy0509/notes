@@ -2,13 +2,16 @@
 
 This directory contains notes for Information and Communication Technology (ICT).
 
+> [!tip] Navigate with the Index
+> Open [[ICT Index]] in Obsidian for the full interactive map of content.
+
 Table of contents:
 - Compulsory Part:
-	- A: Information Processing
+	- A: [[A2|Information Processing]]
 	- B: Computer System Fundamentals
-	- C: Internet and its Applications
-	- D: Computational Thinking and Programming
+	- C: [[Compulsory C1|Internet and its Applications]]
+	- D: [[D|Computational Thinking and Programming]]
 	- E: Social Implications
 - Elective Part:
-	- A: Databases
-	- C: Algorithm and Programming
+	- A: [[Elective/A headings|Databases]]
+	- C: [[Elective/C|Algorithm and Programming]]

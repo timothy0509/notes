@@ -1,3 +1,12 @@
+---
+tags:
+  - economics
+  - microeconomics
+  - notes
+  - draft
+date: 2026-06-04
+---
+
 ## Chapter 1
 > [!info] **Scarcity**
 > When limited resources are insufficient to satisfy unlimited wants

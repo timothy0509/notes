@@ -1,3 +1,15 @@
+---
+tags:
+  - ict
+  - elective
+  - database
+  - sql
+  - reference
+aliases:
+  - SQL Reference
+  - SQL Syntax
+---
+
 # Managing Data Using SQL
 ## Database and SQL statement
 ### What is a database?

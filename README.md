@@ -1,15 +1,23 @@
-# notes
-my notes
+---
+tags:
+  - home
+  - MOC
+---
 
-## Subject Structure
+# Notes Vault
 
-This repository contains notes organized by subject:
+My DSE study notes vault, synced via Nextcloud and version-controlled with Git.
 
-- **math/** - Mathematics notes
-- **english/** - English notes
-- **chinese/** - Chinese notes
-- **economics/** - Economics notes
-- **bafs/** - Business, Accounting and Financial Studies notes
-- **ict/** - Information and Communication Technology notes
+## Quick Start
 
-Test commit
+Open [[Home]] in Obsidian for the full navigation dashboard.
+
+## Subjects
+
+| Subject | Index |
+|---------|-------|
+| BAFS | [[BAFS Index]] |
+| Economics | [[Economics Index]] |
+| ICT | [[ICT Index]] |
+| Math | [[Math Index]] |
+| Chinese | [[Chinese Index]] |

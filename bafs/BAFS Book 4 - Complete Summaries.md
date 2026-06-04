@@ -701,3 +701,10 @@ $$
 $$
 \text{After commission: } \left(\frac{\text{Commission \%}}{100 + \text{Commission \%}}\right) \times \text{Net profit before commission}
 $$
+
+---
+
+## Related
+
+- [[Accounting Ratios]] - Quick reference formula sheet for financial ratios
+- [[BAFS Index]] - Subject overview and navigation

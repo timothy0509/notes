@@ -1,3 +1,12 @@
+---
+tags:
+  - economics
+  - microeconomics
+  - externalities
+  - government
+date: 2026-06-04
+---
+
 # Efficiency, Equity, and the Role of Government
 ## Externalities
 **External costs** are incurred when an action effects others without compensating (negative) or paid (positive).
@@ -10,4 +19,11 @@ When there is an external cost, private and social costs **diverge**.
 
 #### Negative Externalities
 
-Since $\text{MPC}$(Marginal private benefit) is lower than $\text{MSC}$(Marginal social benefit), there is a divergence between the society and the 
+Since $\text{MPC}$(Marginal private benefit) is lower than $\text{MSC}$(Marginal social benefit), there is a divergence between the society and the
+
+---
+
+## Related
+
+- [[Microeconomics Notes]] - Full microeconomics notes covering demand/supply and market structures
+- [[Economics Index]] - Subject overview and navigation

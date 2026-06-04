@@ -6,6 +6,9 @@ tags:
   - microeconomics
   - notes
 date: 2024-01-15
+aliases:
+  - Micro Notes
+  - Microeconomics
 ---
 # Chapter 1: Basic Economic Concepts
 
@@ -938,3 +941,12 @@ Government intervention involves administrative costs to implement and enforce p
 
 > [!warning] Deadweight Loss
 > Government intervention can ==distort resource allocation in the market==, resulting in ==deadweight loss==.
+
+---
+
+## Related
+
+- [[Microeconomics - Chapters 1-5]] - Condensed review of Chapters 1-5
+- [[Macroeconomics Notes]] - Macroeconomics counterpart
+- [[Chapter 14]] - Externalities and government intervention
+- [[Economics Index]] - Subject overview and navigation

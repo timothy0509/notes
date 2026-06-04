@@ -1,3 +1,11 @@
+---
+tags:
+  - math
+  - notes
+  - coordinate-geometry
+  - complex-numbers
+---
+
 # Chapter 1: Number Systems
 ## Powers of $i$
 $i^1 = i$, $i^2 = -1$, $i^3=-i$, $i^4=1$

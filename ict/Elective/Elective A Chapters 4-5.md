@@ -1,6 +1,18 @@
-Here are your comprehensive notes based on the provided chapter material, formatted in Obsidian-flavored markdown.
+---
+tags:
+  - ict
+  - elective
+  - database
+  - design
+  - normalization
+aliases:
+  - Database Design
+  - Normalisation
+  - ER Diagrams
+  - Elective A Chapters 4-5
+---
 
-# Database Systems & Design
+# Database Systems and Design
 
 ## Chapter 1: Relational Database Basics
 
@@ -15,7 +27,9 @@ Here are your comprehensive notes based on the provided chapter material, format
 | **Domain** | Data type and constraint |
 
 ### Schema Structure
+
 The `STUDENT` schema is defined as:
+
 `STUDENT (SID, SNAME, SEX, DOB, HKID, CLASS, CNO, SCORE, EMAIL, REG)`
 
 | Field | Data Type | Description | Remark |
@@ -32,30 +46,35 @@ The `STUDENT` schema is defined as:
 | REG | Boolean | Whether the student is registered | |
 
 ### Keys
+
 #### Candidate Key
-*   Stores unique data.
-*   Cannot store null value.
-*   May consist of more than one field.
-*   Must be minimal.
-*   Is the candidate for the primary key.
-*   *Note:* A candidate key consisting of more than one field is called a **composite key**.
+
+- Stores unique data.
+- Cannot store null value.
+- May consist of more than one field.
+- Must be minimal.
+- Is the candidate for the primary key.
+- *Note:* A candidate key consisting of more than one field is called a **composite key**.
 
 #### Primary Key
-*   Stores unique data.
-*   Cannot store null value.
-*   May consist of more than one field.
-*   Must be minimal.
-*   *Rule:* A table may have more than one candidate key, but it can only have one primary key.
 
-### Foreign Key & Indexing
-*   **Foreign Key**: Used to show the relationship between records in two tables; it is the primary key of the parent table. A table can have more than one foreign key.
-*   **Index**:
-    *   Allows the DBMS to perform a binary search on the indexed field to speed up data retrieval.
-    *   Updated if changes are made to the data or a new record is added.
-    *   Takes time to update and consumes storage space.
-    *   *Tip:* Only frequently searched fields should be indexed.
+- Stores unique data.
+- Cannot store null value.
+- May consist of more than one field.
+- Must be minimal.
+- *Rule:* A table may have more than one candidate key, but it can only have one primary key.
+
+### Foreign Key and Indexing
+
+- **Foreign Key**: Used to show the relationship between records in two tables; it is the primary key of the parent table. A table can have more than one foreign key.
+- **Index**:
+  - Allows the DBMS to perform a binary search on the indexed field to speed up data retrieval.
+  - Updated if changes are made to the data or a new record is added.
+  - Takes time to update and consumes storage space.
+  - *Tip:* Only frequently searched fields should be indexed.
 
 ### Integrity Constraints
+
 | Integrity | Concern |
 | :--- | :--- |
 | **Entity integrity** | The existence and validity of the primary key |
@@ -67,6 +86,7 @@ The `STUDENT` schema is defined as:
 ## Chapter 2: Database Design and ER Diagrams
 
 ### ER Diagram Components
+
 ER diagrams are used to model the logical view of a database.
 
 | Shape | Element | Remark |
@@ -76,17 +96,20 @@ ER diagrams are used to model the logical view of a database.
 | Ellipse | Attribute | Underlined attributes represent the primary key. |
 
 #### Relationships and Cardinality
-*   **Mandatory side**: A student *must* join a sports event.
-*   **Optional side**: A student *may or may not* join a sports event.
-*   **One**: A student may join *one* sports event at most.
-*   **Many**: A student may join *many* sports events.
+
+- **Mandatory side**: A student *must* join a sports event.
+- **Optional side**: A student *may or may not* join a sports event.
+- **One**: A student may join *one* sports event at most.
+- **Many**: A student may join *many* sports events.
 
 ### Managing Anomalies
-*   **Update anomaly**: Failure to maintain data consistency after an update is made.
-*   **Insertion anomaly**: Inability to insert data of one entity type without having the data of another entity type.
-*   **Deletion anomaly**: Loss of data of one entity type when deleting the data of another entity type.
 
-### Normalisation vs. Denormalisation
+> [!warning] Database Anomalies
+> - **Update anomaly**: Failure to maintain data consistency after an update is made.
+> - **Insertion anomaly**: Inability to insert data of one entity type without having the data of another entity type.
+> - **Deletion anomaly**: Loss of data of one entity type when deleting the data of another entity type.
+
+### Normalisation vs Denormalisation
 
 | Normalisation | Denormalisation |
 | :--- | :--- |
@@ -96,14 +119,24 @@ ER diagrams are used to model the logical view of a database.
 | Ability to insert/delete without data loss | |
 
 ### Functional Dependencies
-*   **Partial functional dependency**: Some non-primary key attributes are dependent on *part* of the primary key.
-*   **Transitive functional dependency**: Some non-primary key attributes are dependent on *other non-primary key* attributes.
+
+- **Partial functional dependency**: Some non-primary key attributes are dependent on *part* of the primary key.
+- **Transitive functional dependency**: Some non-primary key attributes are dependent on *other non-primary key* attributes.
 
 ### Levels of Normalisation (Normal Forms)
 
 | Rule | 1NF | 2NF | 3NF |
 | :--- | :---: | :---: | :---: |
-| No multiple values for an attribute | ✅ | ✅ | ✅ |
-| No repeating attributes | ✅ | ✅ | ✅ |
-| No partial functional dependency | | ✅ | ✅ |
-| No transitive functional dependency | | | ✅ |
+| No multiple values for an attribute | Yes | Yes | Yes |
+| No repeating attributes | Yes | Yes | Yes |
+| No partial functional dependency | | Yes | Yes |
+| No transitive functional dependency | | | Yes |
+
+---
+
+## Related
+
+- [[ICT Index]] - Subject overview
+- [[Elective/A]] - SQL functions and joins
+- [[Database Class Practice]] - SQL practice exercises
+- [[ER Diagram]] - SBA entity-relationship diagram

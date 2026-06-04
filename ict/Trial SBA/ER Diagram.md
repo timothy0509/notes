@@ -1,3 +1,14 @@
+---
+tags:
+  - ict
+  - sba
+  - database
+  - er-diagram
+aliases:
+  - SBA ER Diagram
+  - Entity Relationship Diagram
+---
+
 ```mermaid
 erDiagram
     STUDENT ||--o{ CATEGORY : defines
@@ -47,4 +58,13 @@ erDiagram
 
     %% Priority should be Low, Medium, or High
 ```
+
+---
+
+## Related
+
+- [[Database Class Practice]] - SQL practice exercises
+- [[Elective/A headings]] - SQL syntax reference
+- [[Elective/Elective A Chapters 4-5]] - Database design theory
+- [[ICT Index]] - Subject overview
 
