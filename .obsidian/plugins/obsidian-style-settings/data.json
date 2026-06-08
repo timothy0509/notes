@@ -7,5 +7,8 @@
   "encore-settings@@encore-highlight-border": true,
   "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-sky",
   "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-sapphire",
-  "anuppuccin-theme-settings@@anp-bold-custom": "anp-bold-sapphire"
+  "anuppuccin-theme-settings@@anp-bold-custom": "anp-bold-sapphire",
+  "anuppuccin-theme-settings@@anuppuccin-light-theme-accents": "ctp-accent-light-flamingo",
+  "anuppuccin-theme-settings@@anp-callout-select": "anp-callout-sleek",
+  "anuppuccin-theme-settings@@callout-radius": 5
 }
