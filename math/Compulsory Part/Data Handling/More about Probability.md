@@ -10,11 +10,11 @@ tags:
 
 ## Set Language
 
-| Notation | Meaning |
-| -------- | ------- |
-| $A \cup B$ | Union — at least one of $A$ or $B$ occurs |
-| $A \cap B$ | Intersection — both $A$ and $B$ occur |
-| $A'$ or $\overline{A}$ | Complement — $A$ does not occur |
+| Notation               | Meaning                                   |
+| ---------------------- | ----------------------------------------- |
+| $A \cup B$             | Union — at least one of $A$ or $B$ occurs |
+| $A \cap B$             | Intersection — both $A$ and $B$ occur     |
+| $A'$ or $\overline{A}$ | Complement — $A$ does not occur           |
 
 ## Venn Diagrams
 
