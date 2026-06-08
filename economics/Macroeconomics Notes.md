@@ -87,6 +87,16 @@ Full employment GDP is the estimated GDP **when an economy uses its resources ef
 
 ## Related
 
-- [[Microeconomics Notes]] - Microeconomics counterpart
-- [[Chapter 14]] - Externalities and government efficiency
-- [[Economics Index]] - Subject overview and navigation
+### Topic-based Notes
+- [[Macroeconomics/Measurement of Economic Performance]] — GDP, CPI, unemployment
+- [[Macroeconomics/National Income Determination and Price Level]] — AS-AD model
+- [[Macroeconomics/Money and Banking]] — Money supply, credit creation, HK banking
+- [[Macroeconomics/Macroeconomic Problems and Policies]] — Fiscal & monetary policy
+- [[Macroeconomics/International Trade and Finance]] — Comparative advantage, exchange rates
+- [[Macroeconomics/Economic Growth and Development]] — Growth measurement, HDI
+- [[Macroeconomics/Extension of Trade Theory]] — PPF analysis, globalisation
+
+### Legacy Notes
+- [[Microeconomics Notes]] — Microeconomics counterpart
+- [[Chapter 14]] — Externalities and government efficiency
+- [[Economics Index]] — Subject overview and navigation

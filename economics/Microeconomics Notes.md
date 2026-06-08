@@ -946,7 +946,15 @@ Government intervention involves administrative costs to implement and enforce p
 
 ## Related
 
-- [[Microeconomics - Chapters 1-5]] - Condensed review of Chapters 1-5
-- [[Macroeconomics Notes]] - Macroeconomics counterpart
-- [[Chapter 14]] - Externalities and government intervention
-- [[Economics Index]] - Subject overview and navigation
+### Topic-based Notes
+- [[Microeconomics/Basic Economic Concepts]] — Scarcity, choice, opportunity cost
+- [[Microeconomics/Firms and Production]] — Business ownership, costs, integration
+- [[Microeconomics/Market and Price]] — Demand, supply, elasticity, intervention
+- [[Microeconomics/Competition and Market Structure]] — Market structures comparison
+- [[Microeconomics/Efficiency, Equity and the Role of Government]] — Externalities, inequality
+
+### Legacy Notes
+- [[Microeconomics - Chapters 1-5]] — Condensed review of Chapters 1-5
+- [[Chapter 14]] — Externalities and government intervention (partial draft)
+- [[Macroeconomics Notes]] — Macroeconomics counterpart
+- [[Economics Index]] — Subject overview and navigation

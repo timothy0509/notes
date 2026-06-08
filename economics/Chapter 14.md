@@ -25,5 +25,9 @@ Since $\text{MPC}$(Marginal private benefit) is lower than $\text{MSC}$(Marginal
 
 ## Related
 
-- [[Microeconomics Notes]] - Full microeconomics notes covering demand/supply and market structures
-- [[Economics Index]] - Subject overview and navigation
+### Full Topic Note
+- [[Microeconomics/Efficiency, Equity and the Role of Government]] — Comprehensive coverage of this topic
+
+### Other Notes
+- [[Microeconomics Notes]] — Full microeconomics notes covering demand/supply and market structures
+- [[Economics Index]] — Subject overview and navigation
