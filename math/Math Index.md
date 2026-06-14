@@ -11,10 +11,6 @@ aliases:
 > [!abstract] Subject Overview
 > Mathematics - DSE core subject (HKDSE). Based on the CDC-HKEAA Mathematics Curriculum and Assessment Guide (S4-6, 2007/2017).
 
-## Notes
-
-- [[Book 4A notes]] - Number systems, equations of straight lines, foundations
-
 ## Compulsory Part
 
 ### Number and Algebra
