@@ -137,6 +137,6 @@ ER diagrams are used to model the logical view of a database.
 ## Related
 
 - [[ICT Index]] - Subject overview
-- [[Elective/A]] - SQL functions and joins
+- [[ict/Archive/ai notes/Elective/A]] - SQL functions and joins
 - [[Database Class Practice]] - SQL practice exercises
 - [[ER Diagram]] - SBA entity-relationship diagram

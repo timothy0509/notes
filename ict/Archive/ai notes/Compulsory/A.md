@@ -607,10 +607,10 @@ Reports present data in a ==formatted, printable layout==. They can include:
 
 ## Cross-References
 
-- [[Compulsory/B]] — Multimedia and Web Publishing (extends data representation to web)
-- [[Compulsory/C]] — Networking and Data Transmission
-- [[Compulsory/C]] — Internet and Its Applications
-- [[Compulsory/D]] — Problem Formulation and Analysis (algorithm design for data manipulation)
-- [[Compulsory/E]] — Impact of ICT on Society (social implications of information processing)
-- [[Elective/A]] — Databases (advanced database design, normalisation, relational model)
+- [[B]] — Multimedia and Web Publishing (extends data representation to web)
+- [[ict/Archive/ai notes/Compulsory/C]] — Networking and Data Transmission
+- [[ict/Archive/ai notes/Compulsory/C]] — Internet and Its Applications
+- [[D]] — Problem Formulation and Analysis (algorithm design for data manipulation)
+- [[E]] — Impact of ICT on Society (social implications of information processing)
+- [[ict/Archive/ai notes/Elective/A]] — Databases (advanced database design, normalisation, relational model)
 - [[ICT Index]] — Subject overview

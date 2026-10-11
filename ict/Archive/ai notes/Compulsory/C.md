@@ -230,7 +230,7 @@ Scheme  Hostname         Port Path           Query        Fragment
 - **Webcasting**: Broadcasting live events over the Internet
 
 > [!info] Smart City & IoT
-> The Internet enables ==smart city== initiatives: traffic management, energy monitoring, waste management, and public safety through ==IoT== (Internet of Things) devices. See also [[Compulsory/E]] for ethical implications.
+> The Internet enables ==smart city== initiatives: traffic management, energy monitoring, waste management, and public safety through ==IoT== (Internet of Things) devices. See also [[E]] for ethical implications.
 
 ---
 
@@ -378,14 +378,14 @@ A ==VPN== creates an ==encrypted tunnel== over a public network to ensure secure
 | **Cookie Management** | Clearing/tracking cookies |
 
 > [!warning] Ethical Considerations
-> The Internet raises ethical questions about ==intellectual property==, ==digital divide==, ==cyberbullying==, and ==misinformation==. See [[Compulsory/E]] for broader ethical and legal issues, and [[Elective/A]] for database security considerations.
+> The Internet raises ethical questions about ==intellectual property==, ==digital divide==, ==cyberbullying==, and ==misinformation==. See [[E]] for broader ethical and legal issues, and [[ict/Archive/ai notes/Elective/A]] for database security considerations.
 
 ---
 
 # Related
 
 - [[ICT Index]] — Subject overview
-- [[Compulsory/B]] — Fundamentals of Programming (client-server architecture)
-- [[Compulsory/E]] — Ethical and legal issues, data protection
-- [[Elective/A]] — Database security and access control
-- [[Elective/C]] — Data representation and compression
+- [[B]] — Fundamentals of Programming (client-server architecture)
+- [[E]] — Ethical and legal issues, data protection
+- [[ict/Archive/ai notes/Elective/A]] — Database security and access control
+- [[ict/Archive/ai notes/Elective/C]] — Data representation and compression

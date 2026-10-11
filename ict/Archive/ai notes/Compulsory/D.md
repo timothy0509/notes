@@ -47,7 +47,7 @@ flowchart LR
 | **Output**   | The result produced by the program             |
 
 > [!tip] IPO in Client-Server
-> The IPO cycle relates to [[Compulsory/C#Networking Fundamentals|client-server]] request-response patterns — a client sends **input**, the server **processes** it, and returns **output**.
+> The IPO cycle relates to [[ict/Archive/ai notes/Compulsory/C#Networking Fundamentals|client-server]] request-response patterns — a client sends **input**, the server **processes** it, and returns **output**.
 
 ## Decompose a Problem
 
@@ -170,7 +170,7 @@ Call ProcedureABC
 Rectangles with double side borders are used for calling modules in flowcharts.
 
 > [!tip] Modularisation
-> Splitting an algorithm into sub-programs (modules/functions) makes code ==easier to understand==, ==facilitates reuse==, and ==enhances development efficiency==. See [[Elective/C#Subprograms|Elective C - Subprograms]] for advanced modularisation.
+> Splitting an algorithm into sub-programs (modules/functions) makes code ==easier to understand==, ==facilitates reuse==, and ==enhances development efficiency==. See [[ict/Archive/ai notes/Elective/C#Subprograms|Elective C - Subprograms]] for advanced modularisation.
 
 ### Loops (Iteration)
 
@@ -533,7 +533,7 @@ When a problem specification changes, the existing algorithm must be ==modified=
 > Always trace through the modified algorithm with test data to confirm correctness. Reusing the original structure reduces errors compared to rewriting from scratch.
 
 > [!tip] Mathematical Formulas
-> You may be asked to implement mathematical formulas in pseudocode, such as $n!$, $\sum_{i=1}^{n} i$, or $\sqrt{x}$. These are tested in algorithm design questions — see [[Elective/C#Numerical Errors|Elective C]] for related numerical concepts.
+> You may be asked to implement mathematical formulas in pseudocode, such as $n!$, $\sum_{i=1}^{n} i$, or $\sqrt{x}$. These are tested in algorithm design questions — see [[ict/Archive/ai notes/Elective/C#Numerical Errors|Elective C]] for related numerical concepts.
 
 ---
 
@@ -627,14 +627,14 @@ The program starts but crashes during execution.
 > 2. ==Facilitate reuse== — the same module can be called multiple times
 > 3. ==Enhance development efficiency== — multiple people can work on different modules
 >
-> See [[Elective/C#Subprograms|Elective C - Subprograms]] for advanced module design.
+> See [[ict/Archive/ai notes/Elective/C#Subprograms|Elective C - Subprograms]] for advanced module design.
 
 ---
 
 ## Related
 
 - [[ICT Index]] - Subject overview
-- [[Compulsory/A]] - Data validation and control
-- [[Compulsory/B]] - Computer system fundamentals (hardware and software layers)
-- [[Compulsory/C]] - Networking (IPO cycle relates to client-server patterns)
-- [[Elective/C]] - Program errors (overflow, truncation, rounding), subprograms, data structures
+- [[ict/Archive/ai notes/Compulsory/A]] - Data validation and control
+- [[B]] - Computer system fundamentals (hardware and software layers)
+- [[ict/Archive/ai notes/Compulsory/C]] - Networking (IPO cycle relates to client-server patterns)
+- [[ict/Archive/ai notes/Elective/C]] - Program errors (overflow, truncation, rounding), subprograms, data structures

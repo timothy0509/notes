@@ -19,7 +19,7 @@ aliases:
 > - **Topic b:** Testing and debugging (4 hours) — test strategies, debugging tools
 > - **Topic c:** Applications of Programming in Real Life (6 hours) — sensors, physical computing
 >
-> Cross-references: [[Compulsory/D]] (basic programming), [[Compulsory/A]] (two's complement)
+> Cross-references: [[D]] (basic programming), [[ict/Archive/ai notes/Compulsory/A]] (two's complement)
 
 ---
 
@@ -630,7 +630,7 @@ flowchart LR
 - **Underflow:** result is too large negative to store
 
 > [!tip] Two's Complement
-> Refer to [[Compulsory/A]] for the binary representation of signed integers. For an n-bit signed integer: range is $-2^{n-1}$ to $2^{n-1} - 1$.
+> Refer to [[ict/Archive/ai notes/Compulsory/A]] for the binary representation of signed integers. For an n-bit signed integer: range is $-2^{n-1}$ to $2^{n-1} - 1$.
 
 ### Truncation Error
 
@@ -660,7 +660,7 @@ $$
 
 ### Other Error Types
 
-> [!info] See [[Compulsory/D]] for:
+> [!info] See [[D]] for:
 > - **Syntax errors** — violation of language rules (detected at compile/parse time)
 > - **Logical errors** — program runs but produces wrong output
 > - **Run-time errors** — occur during execution (e.g., division by zero, out-of-bounds access)
@@ -753,14 +753,14 @@ END IF
 ```
 
 > [!info] IoT Connection
-> Real-life programming often involves the **Internet of Things (IoT)** — connecting sensors to the internet for remote monitoring and control. This links to [[Compulsory/D]] (algorithm design) and networking concepts.
+> Real-life programming often involves the **Internet of Things (IoT)** — connecting sensors to the internet for remote monitoring and control. This links to [[D]] (algorithm design) and networking concepts.
 
 ---
 
 ## Related
 
 - [[ICT Index]] — Subject overview
-- [[Compulsory/A]] — Data validation, two's complement representation
-- [[Compulsory/B]] — Data types and structures, file handling
-- [[Compulsory/D]] — Problem formulation, basic algorithms, pseudocode
-- [[Elective/A]] — Database functions (for data processing applications)
+- [[ict/Archive/ai notes/Compulsory/A]] — Data validation, two's complement representation
+- [[B]] — Data types and structures, file handling
+- [[D]] — Problem formulation, basic algorithms, pseudocode
+- [[ict/Archive/ai notes/Elective/A]] — Database functions (for data processing applications)

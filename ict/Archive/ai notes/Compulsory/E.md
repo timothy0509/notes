@@ -162,7 +162,7 @@ Ethical behaviour in ICT includes:
 ## Privacy
 
 - ==Personal data== must be collected, stored, and used responsibly.
-- See [[Compulsory/A]] for data validation — accuracy relates to ethical data handling.
+- See [[ict/Archive/ai notes/Compulsory/A]] for data validation — accuracy relates to ethical data handling.
 - Hong Kong's ==Personal Data (Privacy) Ordinance== (Cap. 486) governs data collection and use.
 
 > [!warning] Key Regulation
@@ -188,7 +188,7 @@ Ethical behaviour in ICT includes:
 - Using someone else's work without attribution is ==plagiarism==.
 - Sharing copyrighted content on social media may constitute ==infringement==.
 
-See [[Compulsory/C#Network Security]] for related security and ethical considerations.
+See [[ict/Archive/ai notes/Compulsory/C#Network Security]] for related security and ethical considerations.
 
 ---
 
@@ -273,8 +273,8 @@ See [[Compulsory/C#Network Security]] for related security and ethical considera
 ## Related
 
 - [[ICT Index]] — Subject overview
-- [[Compulsory/B]] — Computer System Fundamentals
-- [[Compulsory/C#Network Security]] — Security ethics and measures
-- [[Compulsory/A]] — Data privacy and validation
-- [[Compulsory/D]] — Programming ethics and software use
-- [[Elective/A]] — Databases (data privacy topics)
+- [[B]] — Computer System Fundamentals
+- [[ict/Archive/ai notes/Compulsory/C#Network Security]] — Security ethics and measures
+- [[ict/Archive/ai notes/Compulsory/A]] — Data privacy and validation
+- [[D]] — Programming ethics and software use
+- [[ict/Archive/ai notes/Elective/A]] — Databases (data privacy topics)

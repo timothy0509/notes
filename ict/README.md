@@ -14,4 +14,4 @@ Table of contents:
 	- E: Social Implications
 - Elective Part:
 	- A: [[Elective/A headings|Databases]]
-	- C: [[Elective/C|Algorithm and Programming]]
+	- C: [[ict/Archive/ai notes/Elective/C|Algorithm and Programming]]

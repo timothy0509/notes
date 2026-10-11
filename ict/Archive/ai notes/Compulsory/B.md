@@ -413,7 +413,7 @@ The ==operating system== manages hardware resources and provides a user interfac
 ## Related
 
 - [[ICT Index]] - Subject overview
-- [[Compulsory/A]] - Information Processing (data handling, validation)
-- [[Compulsory/C]] - Internet and its Applications (networking hardware, communication protocols)
-- [[Compulsory/D]] - Problem Formulation and Programming
-- [[Compulsory/E]] - Impact of ICT on Society (hardware's societal implications)
+- [[ict/Archive/ai notes/Compulsory/A]] - Information Processing (data handling, validation)
+- [[ict/Archive/ai notes/Compulsory/C]] - Internet and its Applications (networking hardware, communication protocols)
+- [[D]] - Problem Formulation and Programming
+- [[E]] - Impact of ICT on Society (hardware's societal implications)

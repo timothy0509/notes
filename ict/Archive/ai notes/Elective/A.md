@@ -21,7 +21,7 @@ status: draft
 > [!info] Overview
 > **Hours:** 38 | **Weighting:** Significant portion of DSE ICT
 > This elective covers relational database concepts, SQL, and database design methodology.
-> Cross-references: [[Compulsory/A]] for basic data concepts, [[Database Class Practice]] for exercises.
+> Cross-references: [[ict/Archive/ai notes/Compulsory/A]] for basic data concepts, [[Database Class Practice]] for exercises.
 
 ---
 
@@ -714,10 +714,10 @@ GRANT SELECT ON ALL TABLES IN SCHEMA public TO readonly_user;
 
 ## Related Notes
 
-- [[Compulsory/A]] — Basic data concepts
+- [[ict/Archive/ai notes/Compulsory/A]] — Basic data concepts
 - [[Database Class Practice]] — Hands-on SQL exercises
-- [[Compulsory/E]] — Social Implications
-- [[Compulsory/C]] — Network security
+- [[E]] — Social Implications
+- [[ict/Archive/ai notes/Compulsory/C]] — Network security
 
 ---
 
