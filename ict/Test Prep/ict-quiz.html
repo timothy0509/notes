@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICT Test Prep Quiz — Units B, E, Elective A</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F1E7;
+  --paper-2:#FFFDF7;
+  --ink:#191D2B;
+  --ink-soft:#4B5064;
+  --line:#E2D9C6;
+  --line-dark:#191D2B;
+  --accent:#FF4D00;
+  --accent-ink:#fff;
+  --blue:#2456E6;
+  --teal:#0C7A5C;
+  --amber:#B45309;
+  --good:#0C7A5C;
+  --bad:#D92D20;
+  --card-shadow: 6px 6px 0 var(--line-dark);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(25,29,43,.10) 1px, transparent 0);
+  background-size:22px 22px;
+  min-height:100vh;
+}
+body::before{
+  content:"";
+  position:fixed; inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg, rgba(255,77,0,.06), transparent 30%),
+    repeating-linear-gradient(0deg, transparent 0 31px, rgba(25,29,43,.05) 31px 32px);
+  mix-blend-mode:multiply;
+}
+a{color:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:28px 22px 90px;position:relative}
+.topbar{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  border:2px solid var(--line-dark);
+  background:var(--paper-2);
+  border-radius:16px;
+  padding:12px 16px;
+  box-shadow:4px 4px 0 var(--line-dark);
+  position:sticky;top:14px;z-index:30;
+}
+.brand{display:flex;align-items:center;gap:12px;margin-right:auto}
+.mark{
+  width:44px;height:44px;border-radius:12px;
+  background:var(--ink);color:#fff;
+  display:grid;place-items:center;
+  font-family:"Fraunces",Georgia,serif;font-weight:900;font-size:20px;
+  border:2px solid var(--ink);
+  position:relative;
+}
+.mark::after{content:"";position:absolute;right:-6px;top:-6px;width:14px;height:14px;background:var(--accent);border:2px solid var(--ink);border-radius:50%}
+.brand h1{font-family:"Fraunces",Georgia,serif;font-size:19px;line-height:1;margin:0;letter-spacing:-.02em}
+.brand p{margin:2px 0 0;font-size:12.5px;color:var(--ink-soft);font-family:"IBM Plex Mono",monospace}
+.pill{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;
+  border:1.5px solid var(--line-dark);border-radius:999px;
+  padding:6px 11px;background:#fff;display:inline-flex;align-items:center;gap:8px;
+}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--accent);border:1.5px solid var(--ink)}
+.live-timer{font-variant-numeric:tabular-nums}
+.hero{
+  margin-top:22px;
+  border:2.5px solid var(--line-dark);
+  border-radius:24px;
+  background:var(--paper-2);
+  box-shadow:var(--card-shadow);
+  overflow:hidden;
+  display:grid;
+  grid-template-columns: 1.15fr .85fr;
+}
+.hero-main{padding:34px 34px 30px}
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  border:1.5px solid var(--line-dark);border-radius:999px;padding:7px 12px;background:#fff;
+}
+.kicker i{width:8px;height:8px;background:var(--accent);border-radius:50%;display:inline-block}
+.hero h2{
+  font-family:"Fraunces",Georgia,serif;
+  font-size:clamp(38px,5vw,62px);
+  line-height:.95;letter-spacing:-.04em;margin:18px 0 12px;
+}
+.hero h2 span{color:var(--accent)}
+.lede{font-size:16.5px;line-height:1.55;color:var(--ink-soft);max-width:52ch;margin:0}
+.weight{
+  margin-top:20px;border:2px solid var(--line-dark);border-radius:14px;overflow:hidden;background:#fff;
+}
+.weight-bar{display:flex;height:44px;font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600}
+.weight-bar div{display:flex;align-items:center;justify-content:center;gap:8px}
+.w-comp{width:85%;background:var(--ink);color:#fff}
+.w-elec{width:15%;background:var(--accent);color:#fff}
+.weight-legend{display:flex;gap:16px;flex-wrap:wrap;padding:10px 14px;font-size:13px;border-top:2px solid var(--line-dark)}
+.swatch{width:12px;height:12px;border-radius:4px;border:1.5px solid var(--ink);display:inline-block;vertical-align:-1px;margin-right:6px}
+.controls{margin-top:20px;display:grid;gap:14px}
+.control-group{border-top:1.5px dashed var(--line);padding-top:14px}
+.control-group h3{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 10px;color:var(--ink-soft)}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{
+  border:2px solid var(--line-dark);background:#fff;border-radius:999px;
+  padding:9px 15px;font-weight:600;font-size:14px;cursor:pointer;
+  display:inline-flex;align-items:center;gap:8px;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.chip small{font-family:"IBM Plex Mono",monospace;font-weight:400;font-size:11.5px;color:var(--ink-soft)}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:3px 3px 0 var(--accent)}
+.chip:hover{transform:translateY(-1px)}
+.seg{display:flex;gap:10px;flex-wrap:wrap}
+.seg button{
+  border:2px solid var(--line-dark);background:#fff;border-radius:12px;
+  padding:10px 16px;font-weight:700;font-size:14px;cursor:pointer;
+}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:3px 3px 0 var(--ink)}
+.toggles{display:flex;gap:10px;flex-wrap:wrap}
+.toggle{
+  display:inline-flex;align-items:center;gap:10px;
+  border:2px solid var(--line-dark);border-radius:999px;background:#fff;
+  padding:8px 8px 8px 14px;font-size:13.5px;font-weight:600;cursor:pointer;
+}
+.switch{width:44px;height:24px;border-radius:999px;border:2px solid var(--ink);background:#EDE6D6;position:relative;transition:.2s}
+.switch::after{content:"";position:absolute;top:1px;left:2px;width:17px;height:17px;border-radius:50%;background:#fff;border:2px solid var(--ink);transition:.2s}
+.toggle[aria-pressed="true"] .switch{background:var(--ink)}
+.toggle[aria-pressed="true"] .switch::after{left:20px;background:var(--accent)}
+.start-row{display:flex;gap:12px;margin-top:6px;flex-wrap:wrap}
+.btn{
+  border:2.5px solid var(--line-dark);border-radius:14px;
+  padding:15px 22px;font-weight:800;font-size:16px;cursor:pointer;
+  background:var(--accent);color:#fff;box-shadow:4px 4px 0 var(--ink);
+  transition:transform .15s ease, box-shadow .15s ease;
+  display:inline-flex;align-items:center;gap:10px;
+}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.btn.ghost{background:#fff;color:var(--ink)}
+.btn.small{padding:10px 14px;font-size:13.5px;border-radius:11px}
+.hero-side{
+  background:var(--ink);color:#F6F1E7;padding:30px 28px;
+  border-left:2.5px solid var(--line-dark);
+  display:flex;flex-direction:column;gap:16px;
+  position:relative;overflow:hidden;
+}
+.hero-side::after{
+  content:"B / E / A";
+  position:absolute;right:-8px;bottom:-18px;
+  font-family:"Fraunces",serif;font-weight:900;font-size:110px;line-height:1;
+  opacity:.08;letter-spacing:-.05em;
+}
+.side-card{border:1.5px solid rgba(246,241,231,.25);border-radius:14px;padding:14px 15px;background:rgba(255,255,255,.06)}
+.side-card h4{margin:0 0 8px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+.side-card ul{margin:0;padding-left:18px;font-size:14px;line-height:1.6}
+.side-card code{font-family:"IBM Plex Mono",monospace;background:rgba(255,77,0,.18);padding:1px 6px;border-radius:6px;font-size:12.5px}
+.stat-row{display:flex;gap:10px}
+.stat{flex:1;border:1.5px solid rgba(246,241,231,.25);border-radius:12px;padding:10px;text-align:center}
+.stat b{display:block;font-family:"Fraunces",serif;font-size:26px;line-height:1}
+.stat span{font-family:"IBM Plex Mono",monospace;font-size:11px;opacity:.75}
+/* quiz layout */
+#quizView,#resultView{display:none}
+.progress-shell{
+  margin:20px 0 16px;border:2px solid var(--line-dark);border-radius:14px;background:#fff;
+  padding:12px 14px;box-shadow:3px 3px 0 var(--ink);
+}
+.progress-top{display:flex;align-items:center;gap:12px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;margin-bottom:10px;flex-wrap:wrap}
+.progress-track{height:14px;border:2px solid var(--ink);border-radius:999px;overflow:hidden;background:#EFE8D8;flex:1;min-width:180px}
+.progress-fill{height:100%;width:0%;background:repeating-linear-gradient(-45deg,var(--accent) 0 10px,#ff6a26 10px 20px);transition:width .4s ease}
+.pal{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.pal button{
+  width:34px;height:34px;border-radius:9px;border:1.5px solid var(--ink);
+  background:#fff;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;cursor:pointer;
+}
+.pal button.done{background:var(--ink);color:#fff}
+.pal button.current{outline:3px solid var(--accent);outline-offset:1px}
+.pal button.flagged::after{content:"";display:block;width:6px;height:6px;background:var(--accent);border-radius:50%;margin:2px auto 0}
+.qcard{
+  border:2.5px solid var(--line-dark);border-radius:22px;background:var(--paper-2);
+  box-shadow:var(--card-shadow);overflow:hidden;
+}
+.qhead{padding:22px 26px 0;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.unit{
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  border:1.5px solid var(--ink);border-radius:999px;padding:6px 11px;color:#fff;
+}
+.unit.B{background:var(--blue)} .unit.E{background:var(--teal)} .unit.A{background:var(--amber)}
+.meta{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-soft);border:1.5px dashed var(--ink-soft);border-radius:999px;padding:6px 11px}
+.marks{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;background:var(--ink);color:#fff;border-radius:999px;padding:6px 12px}
+.qbody{padding:18px 26px 24px}
+.qstem{font-family:"Fraunces",Georgia,serif;font-size:clamp(21px,2.6vw,28px);line-height:1.25;letter-spacing:-.02em;margin:6px 0 16px}
+.codeblock{
+  background:#141826;color:#E8E6DF;border-radius:14px;border:2px solid var(--ink);
+  padding:16px 18px;font-family:"IBM Plex Mono",monospace;font-size:13.5px;line-height:1.65;
+  overflow-x:auto;margin:0 0 14px;white-space:pre;
+}
+.codeblock .k{color:#FF8A50}.codeblock .s{color:#9CD6A3}.codeblock .c{color:#8B90A7}.codeblock .f{color:#8FC1FF}
+.minisql-tables{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 14px}
+.minisql-tables table{width:100%;border-collapse:collapse;background:#fff;border:2px solid var(--ink);border-radius:12px;overflow:hidden;font-size:13px}
+.minisql-tables th{background:var(--ink);color:#fff;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.06em;padding:8px;text-align:left}
+.minisql-tables td{border-top:1px solid var(--line);padding:7px 8px;font-family:"IBM Plex Mono",monospace}
+.minisql-tables caption{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;padding:8px;background:#fff;border:2px solid var(--ink);border-bottom:none;border-radius:12px 12px 0 0}
+.er-svg{border:2px solid var(--ink);border-radius:14px;background:#fff;margin:0 0 14px;overflow:hidden}
+.options{display:grid;gap:10px;margin-top:6px}
+.opt{
+  text-align:left;border:2px solid var(--line-dark);border-radius:14px;background:#fff;
+  padding:13px 14px 13px 12px;font-size:15px;line-height:1.45;cursor:pointer;
+  display:flex;gap:12px;align-items:flex-start;
+  transition:transform .12s ease, box-shadow .12s ease, background .2s;
+}
+.opt:hover:not(:disabled){transform:translateY(-1px);box-shadow:3px 3px 0 var(--ink)}
+.opt .key{
+  flex:0 0 34px;height:34px;border-radius:10px;border:2px solid var(--ink);
+  display:grid;place-items:center;font-family:"IBM Plex Mono",monospace;font-weight:600;background:var(--paper);
+}
+.opt.correct{border-color:var(--good);background:#E6F4ED;box-shadow:3px 3px 0 var(--good)}
+.opt.correct .key{background:var(--good);color:#fff;border-color:var(--good)}
+.opt.wrong{border-color:var(--bad);background:#FDECEA;box-shadow:3px 3px 0 var(--bad)}
+.opt.wrong .key{background:var(--bad);color:#fff;border-color:var(--bad)}
+.opt.dim{opacity:.75}
+.opt:disabled{cursor:default}
+.feedback{
+  margin-top:14px;border-radius:14px;border:2px solid var(--ink);overflow:hidden;display:none;
+}
+.feedback.show{display:block;animation:pop .3s ease}
+@keyframes pop{from{transform:translateY(6px);opacity:0}to{transform:none;opacity:1}}
+.feedback-head{padding:10px 16px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600;letter-spacing:.06em;color:#fff}
+.feedback-head.ok{background:var(--good)} .feedback-head.no{background:var(--bad)}
+.feedback-body{padding:14px 16px;background:#fff;font-size:14.5px;line-height:1.65}
+.feedback-body b.trap{display:inline-block;background:#FFF1DB;border:1.5px solid var(--amber);color:#7C3F0C;border-radius:8px;padding:2px 8px;font-family:"IBM Plex Mono",monospace;font-size:12px;margin-bottom:6px}
+.qnav{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center}
+.qnav .spacer{flex:1}
+.linklike{border:none;background:none;font-weight:700;font-size:13.5px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.type-badge{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--ink);border-radius:999px;padding:6px 11px;background:#fff}
+.type-badge.mc{background:#fff}
+.type-badge.written{background:#FFF1DB;border-color:var(--amber);color:#7C3F0C}
+.answer-zone{margin-top:6px;display:grid;gap:12px}
+.part-block{border:2px solid var(--line-dark);border-radius:14px;background:#fff;overflow:hidden}
+.part-head{padding:10px 14px;background:var(--paper);border-bottom:1.5px solid var(--line-dark);font-weight:700;font-size:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.part-head .pmarks{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11.5px;background:var(--ink);color:#fff;border-radius:999px;padding:4px 10px}
+.part-block textarea{width:100%;border:none;resize:vertical;min-height:110px;padding:14px;font-family:inherit;font-size:14.5px;line-height:1.6;background:#fff;color:var(--ink)}
+.part-block textarea:focus{outline:3px solid var(--accent);outline-offset:-3px}
+.part-block textarea:disabled{background:var(--paper-2);color:var(--ink-soft)}
+.model-box{margin-top:12px;border-radius:14px;border:2px solid var(--ink);overflow:hidden;display:none}
+.model-box.show{display:block;animation:pop .3s ease}
+.model-head{padding:10px 16px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600;letter-spacing:.06em;background:var(--ink);color:#fff}
+.model-body{padding:14px 16px;background:#fff;font-size:14.5px;line-height:1.65}
+.model-body ol{margin:8px 0 0;padding-left:20px}
+.model-body li{margin:5px 0}
+.model-body code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:#F1EBDD;padding:1px 6px;border-radius:6px}
+.selfmark{margin-top:12px;border:2px dashed var(--ink);border-radius:14px;padding:12px 14px;background:#FFFDF7;display:none}
+.selfmark.show{display:block}
+.selfmark p{margin:0 0 10px;font-weight:700;font-size:14px}
+.mark-btns{display:flex;gap:8px;flex-wrap:wrap}
+.mark-btns button{border:2px solid var(--ink);background:#fff;border-radius:10px;min-width:44px;padding:8px 12px;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:13px;cursor:pointer}
+.mark-btns button:hover{transform:translateY(-1px);box-shadow:2px 2px 0 var(--ink)}
+.mark-btns button.sel{background:var(--ink);color:#fff;box-shadow:2px 2px 0 var(--accent)}
+.mark-btns button:disabled{cursor:default;opacity:.85}
+.marked-note{font-family:"IBM Plex Mono",monospace;font-size:12px;margin-top:8px;color:var(--ink-soft)}
+/* results */
+.result-grid{display:grid;grid-template-columns:360px 1fr;gap:18px;margin-top:20px}
+.score-card{border:2.5px solid var(--line-dark);border-radius:22px;background:var(--ink);color:#F6F1E7;padding:26px;text-align:center;box-shadow:var(--card-shadow);position:relative;overflow:hidden}
+.score-card::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at 50% -40px, rgba(255,77,0,.35), transparent)}
+.ring{width:190px;height:190px;margin:6px auto;display:block}
+.break-card{border:2.5px solid var(--line-dark);border-radius:22px;background:var(--paper-2);box-shadow:var(--card-shadow);padding:22px 24px}
+.bar-row{display:grid;grid-template-columns:170px 1fr 60px;gap:12px;align-items:center;margin:12px 0;font-size:14px}
+.bar-track{height:16px;border:2px solid var(--ink);border-radius:999px;background:#EFE8D8;overflow:hidden}
+.bar-fill{height:100%;background:var(--ink)}
+.review{margin-top:18px;display:grid;gap:12px}
+.rev{border:2px solid var(--line-dark);border-radius:14px;background:#fff;overflow:hidden}
+.rev summary{cursor:pointer;padding:13px 15px;font-weight:600;font-size:14.5px;list-style:none;display:flex;gap:10px;align-items:center}
+.rev summary::-webkit-details-marker{display:none}
+.rev .rev-body{border-top:1.5px dashed var(--line);padding:12px 15px;font-size:14px;line-height:1.6;background:var(--paper-2)}
+.tag-ok,.tag-no{font-family:"IBM Plex Mono",monospace;font-size:11.5px;border-radius:999px;padding:4px 10px;border:1.5px solid var(--ink)}
+.tag-ok{background:#E6F4ED}.tag-no{background:#FDECEA}
+footer{margin-top:26px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-soft);text-align:center;line-height:1.7}
+kbd{border:1.5px solid var(--ink);border-bottom-width:3px;border-radius:6px;padding:1px 7px;background:#fff;font-family:"IBM Plex Mono",monospace;font-size:12px}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-side{border-left:none;border-top:2.5px solid var(--line-dark)}
+  .result-grid{grid-template-columns:1fr}
+  .minisql-tables{grid-template-columns:1fr}
+  .topbar{position:static}
+}
+@media print{
+  .topbar,.progress-shell,.qnav,.start-row,.hero-side{display:none!important}
+  body{background:#fff}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="mark">Q</div>
+      <div>
+        <h1>ICT Test Prep Quiz</h1>
+        <p>Unit B · Unit E · Elective A (ER + joins)</p>
+      </div>
+    </div>
+    <span class="pill"><span class="dot"></span><span id="topStatus">Ready</span></span>
+    <span class="pill live-timer" id="topTimer">00:00</span>
+    <span class="pill">Best: <b id="topBest" style="margin-left:6px">—</b></span>
+  </div>
+
+  <!-- SETUP -->
+  <section id="setupView">
+    <div class="hero">
+      <div class="hero-main">
+        <span class="kicker"><i></i>HKDSE ICT · Paper 1 + Elective A slice</span>
+        <h2>System basics, social impact, <span>database joins.</span></h2>
+        <p class="lede">One sitting, model answers drawn from your B and E prep notes and the Elective A database notes. Multiple choice is auto-marked, written answers are self-marked against HKDSE style marking points. Compulsory questions carry about 85 percent of the set, Elective A about 15 percent. No login, progress stays in this browser.</p>
+
+        <div class="weight" aria-label="Question weighting">
+          <div class="weight-bar"><div class="w-comp">Compulsory 85%</div><div class="w-elec">A 15%</div></div>
+          <div class="weight-legend">
+            <span><span class="swatch" style="background:#2456E6"></span>Unit B · Computer System Fundamentals</span>
+            <span><span class="swatch" style="background:#0C7A5C"></span>Unit E · Social Implications</span>
+            <span><span class="swatch" style="background:#B45309"></span>Elective A · ER diagrams, multi-table queries</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="control-group">
+            <h3>1 · Units in this run</h3>
+            <div class="chips" id="unitChips">
+              <button class="chip" data-unit="B" aria-pressed="true">Unit B <small>system fundamentals</small></button>
+              <button class="chip" data-unit="E" aria-pressed="true">Unit E <small>social implications</small></button>
+              <button class="chip" data-unit="A" aria-pressed="true">Elective A <small>ER + joins</small></button>
+            </div>
+          </div>
+          <div class="control-group">
+            <h3>2 · Question type</h3>
+            <div class="seg" id="typeSeg">
+              <button data-type="mixed" aria-pressed="true">Mixed (MC + written)</button>
+              <button data-type="mc" aria-pressed="false">MC only</button>
+              <button data-type="written" aria-pressed="false">Written only</button>
+            </div>
+          </div>
+          <div class="control-group">
+            <h3>3 · Length</h3>
+            <div class="seg" id="lenSeg">
+              <button data-len="10" aria-pressed="false">Quick 10</button>
+              <button data-len="20" aria-pressed="true">Standard 20</button>
+              <button data-len="999" aria-pressed="false">Full set</button>
+            </div>
+          </div>
+          <div class="control-group">
+            <h3>4 · Options</h3>
+            <div class="toggles">
+              <button class="toggle" id="tglShuffle" aria-pressed="true"><span>Shuffle order</span><span class="switch"></span></button>
+              <button class="toggle" id="tglInstant" aria-pressed="true"><span>Mark as I go</span><span class="switch"></span></button>
+              <button class="toggle" id="tglTimer" aria-pressed="false"><span>30 min countdown</span><span class="switch"></span></button>
+            </div>
+          </div>
+          <div class="start-row">
+            <button class="btn" id="btnStart">Start quiz <span aria-hidden="true">→</span></button>
+            <button class="btn ghost small" id="btnShuffleAll">Shuffle and start full set</button>
+          </div>
+          <p style="font-size:13px;color:var(--ink-soft);margin:4px 0 0">Tip: keys <kbd>1</kbd>–<kbd>4</kbd> answer MC, <kbd>→</kbd> next, <kbd>←</kbd> back, <kbd>F</kbd> flags a question. Written: type your answer, open the model, mark yourself strictly.</p>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div class="side-card">
+          <h4>What gets tested</h4>
+          <ul>
+            <li>CPU, buses, fetch cycle, RAM and ROM, storage choice</li>
+            <li>OS functions, drivers, modes of operation</li>
+            <li>IP law, licences, health hazards, AI data traps</li>
+            <li>ER symbols, 1:N and M:N mapping, <code>JOIN</code> logic</li>
+            <li>Written practice: storage cases, workstation fixes, IP mapping, writing SQL</li>
+          </ul>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><b id="statTotal">45</b><span>questions</span></div>
+          <div class="stat"><b>85/15</b><span>weight split</span></div>
+          <div class="stat"><b id="statBest">—</b><span>best score</span></div>
+        </div>
+        <div class="side-card">
+          <h4>Marking style</h4>
+          <ul>
+            <li>MC is auto-marked. Written answers are self-marked, be strict with yourself.</li>
+            <li>Watch for <code>exam trap</code> boxes. They come from real 2025 marking notes.</li>
+            <li>Flag anything shaky and retry only the misses at the end.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quizView">
+    <div class="progress-shell">
+      <div class="progress-top">
+        <span id="progLabel">Q1 of 20</span>
+        <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+        <span id="streakLabel">Streak 0</span>
+        <span id="scoreLabel">Score 0</span>
+      </div>
+      <div class="pal" id="palette"></div>
+    </div>
+
+    <article class="qcard">
+      <div class="qhead">
+        <span class="unit" id="qUnit">Unit B</span>
+        <span class="type-badge mc" id="qType">MC</span>
+        <span class="meta" id="qTopic">CPU</span>
+        <span class="marks" id="qMarks">1 mark</span>
+      </div>
+      <div class="qbody">
+        <h2 class="qstem" id="qStem"></h2>
+        <div id="qExtra"></div>
+        <div class="options" id="qOpts"></div>
+        <div class="feedback" id="qFeed">
+          <div class="feedback-head" id="qFeedHead">Correct</div>
+          <div class="feedback-body" id="qFeedBody"></div>
+        </div>
+        <div class="qnav">
+          <button class="btn ghost small" id="btnPrev">← Back</button>
+          <button class="linklike" id="btnFlag">Flag for review</button>
+          <span class="spacer"></span>
+          <button class="btn ghost small" id="btnReveal">Show answer</button>
+          <button class="btn small" id="btnNext">Next →</button>
+          <button class="btn small" id="btnFinish" style="display:none;background:var(--ink)">Finish</button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="resultView">
+    <div class="result-grid">
+      <div class="score-card">
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin:0">Your score</p>
+        <svg class="ring" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="84" fill="none" stroke="rgba(246,241,231,.18)" stroke-width="16"/>
+          <circle id="ringFg" cx="100" cy="100" r="84" fill="none" stroke="#FF4D00" stroke-width="16" stroke-linecap="round" transform="rotate(-90 100 100)" stroke-dasharray="527.8" stroke-dashoffset="527.8" style="transition:stroke-dashoffset 1s ease"/>
+          <text id="ringText" x="100" y="105" text-anchor="middle" fill="#F6F1E7" font-family="Fraunces,serif" font-weight="900" font-size="44">0%</text>
+          <text id="ringSub" x="100" y="132" text-anchor="middle" fill="#F6F1E7" opacity=".7" font-family="IBM Plex Mono,monospace" font-size="12">0 / 0</text>
+        </svg>
+        <h3 id="gradeTitle" style="font-family:Fraunces,serif;font-size:28px;margin:8px 0 4px;letter-spacing:-.02em">Solid pass</h3>
+        <p id="gradeLine" style="margin:0 0 14px;opacity:.8;font-size:14px;line-height:1.6"></p>
+        <div class="stat-row">
+          <div class="stat"><b id="rCorrect">0</b><span>correct</span></div>
+          <div class="stat"><b id="rStreak">0</b><span>best streak</span></div>
+          <div class="stat"><b id="rTime">0:00</b><span>time used</span></div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center">
+          <button class="btn small" id="btnRetry">Retry misses</button>
+          <button class="btn small ghost" id="btnRestart" style="color:#191D2B">New run</button>
+        </div>
+      </div>
+      <div class="break-card">
+        <h3 style="font-family:Fraunces,serif;font-size:24px;margin:0;letter-spacing:-.02em">Breakdown by unit</h3>
+        <p style="margin:6px 0 4px;color:var(--ink-soft);font-size:14px">The set targets 85 percent compulsory and 15 percent Elective A. See where the marks leaked.</p>
+        <div id="breakBars"></div>
+        <h3 style="font-family:Fraunces,serif;font-size:22px;margin:20px 0 6px;letter-spacing:-.02em">Review</h3>
+        <div class="review" id="reviewList"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Built from your notes: ICT Compulsory B and E Test Prep, Elective A databases material, and the C and A Guide outcomes.<br>
+    File: <span style="text-decoration:underline">ict/Test Prep/ict-quiz.html</span> · Works offline once loaded · Progress best score stored locally
+  </footer>
+</div>
+
+<script>
+const QUESTIONS = [
+/* ---------- UNIT B ---------- */
+{u:"B",topic:"CPU composition",marks:1,
+ stem:"Which of the following is NOT a component of the CPU?",
+ opts:["Control unit (CU)","Arithmetic logic unit (ALU)","Cache memory","Registers"],ans:2,
+ why:"The syllabus defines the CPU as CU plus ALU plus registers. Cache sits between CPU and RAM, so it is fast memory, not a CPU part.",
+ trap:"Exam trap: any option list that adds cache to CU, ALU and registers is testing exactly this."},
+{u:"B",topic:"Registers",marks:1,
+ stem:"Which register holds the address of the NEXT instruction to be fetched?",
+ opts:["MAR (memory address register)","MDR (memory data register)","PC (program counter)","CIR (current instruction register)"],ans:2,
+ why:"PC points ahead to the next instruction. MAR holds the address in use now, MDR holds data moving now, CIR holds the instruction being decoded now."},
+{u:"B",topic:"Buses",marks:1,
+ stem:"Which bus carries memory addresses from the CPU to memory?",
+ opts:["Data bus, bidirectional","Address bus, unidirectional","Address bus, bidirectional","Control bus, unidirectional"],ans:1,
+ why:"The address bus is one way, CPU to memory, because only the CPU names the location. The data bus is two way because data is read and written."},
+{u:"B",topic:"Machine cycle",marks:2,
+ stem:"In the fetch step, what is the correct order of events?",
+ opts:["PC → MAR, instruction → MDR → CIR, then PC increments","CIR → MDR → MAR, then PC resets to zero","ALU computes the address, then CU skips the fetch","MDR → PC → MAR, then CIR clears the cache"],ans:0,
+ why:"Fetch copies the PC address into MAR, reads the instruction into MDR, moves it to CIR, then increments PC. Decode and execute come after."},
+{u:"B",topic:"Memory volatility",marks:1,
+ stem:"Which of the following loses its contents when power is switched off?",
+ opts:["ROM","SSD","RAM","DVD"],ans:2,
+ why:"RAM is volatile working storage. ROM and all secondary storage (SSD, DVD, HDD, tape) keep data without power."},
+{u:"B",topic:"Units",marks:1,
+ stem:"In DSE calculations, 1 KB equals:",
+ opts:["1000 bytes","1024 bytes","1000 bits","1024 bits"],ans:1,
+ why:"Use powers of 2 for storage: 1 KB = 1024 bytes. The 1000 based figure belongs to bandwidth (for example Mbps), not storage size."},
+{u:"B",topic:"Secondary storage",marks:1,
+ stem:"Which storage device supports SEQUENTIAL access only?",
+ opts:["Hard disk drive","Solid state drive","Optical disc","Magnetic tape"],ans:3,
+ why:"Tape must be read in order from the start, so it suits archives written once and rarely read. Disks and SSDs support random access."},
+{u:"B",topic:"Storage choice",marks:2,
+ stem:"The media club edits large video files on a workstation that runs for hours. Which is the best fit, and why?",
+ opts:["HDD, because it is cheapest per GB","SSD, for high transfer speed and no moving parts","Optical disc, because discs are portable","Magnetic tape, because capacity is huge"],ans:1,
+ why:"Video editing needs sustained speed, so an SSD wins on transfer rate plus durability (no moving parts, silent under load). HDD or tape fits bulk backup, not live editing."},
+{u:"B",topic:"Utility software",marks:1,
+ stem:"A student suggests defragmenting the new SSD to speed it up. What is wrong with this?",
+ opts:["Defragmentation only applies to HDDs","SSDs cannot be written to more than once","Defragmentation deletes the OS","SSDs have no storage capacity"],ans:0,
+ why:"Defragmentation regroups fragments on spinning disks. SSDs read electronically with no seek penalty, so the tool brings no gain and adds needless writes."},
+{u:"B",topic:"Operating system",marks:1,
+ stem:"Which list contains ONLY operating system functions?",
+ opts:["Word processing, web browsing, gaming","Memory, process, file, device management, user interface, security","Compiling, printing, scanning","Compression, defragmentation, backup of one file"],ans:1,
+ why:"An OS manages memory, processes, files, devices, the user interface and security. In the 2025 MC item only 45 percent included security, so keep it in the list."},
+{u:"B",topic:"Drivers",marks:2,
+ stem:"A printer prints garbled pages after an OS upgrade. The technician updates the printer driver and it works. What does the driver actually do?",
+ opts:["It designs the document layout for the user","It lets the OS communicate with the specific device, interpreting print jobs and returning error messages","It increases the paper tray capacity","It replaces the need for an operating system"],ans:1,
+ why:"A driver is the translator between OS and one device model. Updating it restores compatibility. 'It helps the printer work' is too vague for marks."},
+{u:"B",topic:"Modes of operation",marks:2,
+ stem:"Match each job to its mode: (1) payroll jobs collected and run overnight, (2) an airbag sensor that must respond within milliseconds, (3) one server hosting several virtual machines.",
+ opts:["(1) batch, (2) real-time, (3) virtualisation","(1) real-time, (2) batch, (3) parallel","(1) distributed, (2) virtualisation, (3) batch","(1) parallel, (2) distributed, (3) batch"],ans:0,
+ why:"Batch collects jobs with no interaction. Real-time guarantees a fast response. Virtualisation splits one physical machine into several virtual ones. Parallel shares one task across processors, distributed spreads work across networked machines."},
+{u:"B",topic:"Performance",marks:1,
+ stem:"A PC has a fast SSD but slows badly with many browser tabs open. What is the most likely cause and fix?",
+ opts:["SSD failure, replace the SSD","RAM is full so the OS pages to disk, add more RAM","Monitor is too small, buy a bigger one","Cache is a CPU part, replace the CPU"],ans:1,
+ why:"Each tab uses RAM. When RAM fills, the OS uses disk as virtual memory, which is far slower than RAM. More RAM attacks the cause. The SSD only softens the penalty."},
+{u:"B",topic:"Bus width",marks:1,
+ stem:"A machine has a 32-bit address bus. How many distinct memory addresses can it reach?",
+ opts:["32","32,000","2 to the power of 32","32 squared bytes"],ans:2,
+ why:"Width is the number of bits moved at once. A 32-bit address bus names 2^32 locations. A 32-bit data bus moves 32 bits per transfer."},
+{u:"B",topic:"Software types",marks:1,
+ stem:"Which pair is correct?",
+ opts:["Utility programs are application software","A payroll system built for one bank is tailor-made application software","An OS is application software","A word processor is system software"],ans:1,
+ why:"System software serves the machine (OS, drivers, utilities). Application software serves the user. General-purpose suits many users, tailor-made is custom for one organisation."},
+{u:"B",topic:"CLI vs GUI",marks:1,
+ stem:"Which statement about user interfaces is correct?",
+ opts:["CLI suits beginners who like icons and menus","GUI suits automation and very low resource use","CLI suits experts and automation, GUI suits beginners and visual tasks","Touch input suits servers with no screen"],ans:2,
+ why:"Command lines reward experts and scripts. Graphical interfaces lower the learning curve for visual work. Touch and voice suit mobile devices and accessibility."},
+
+/* ---------- UNIT E ---------- */
+{u:"E",topic:"Intellectual property",marks:1,
+ stem:"A startup designs a new logo and brand name. Which protection applies?",
+ opts:["Patent","Copyright","Trademark","Trade secret"],ans:2,
+ why:"Brand identifiers are trademarks. Inventions and processes take patents. Original works including code take copyright. Secret formulas stay trade secrets."},
+{u:"E",topic:"Software licences",marks:1,
+ stem:"Which statement about freeware and open source is correct?",
+ opts:["Both can be modified and redistributed freely","Freeware is free to use but usually closed, open source allows modification and redistribution","Both must be paid for after a trial","Open source is free to use but forbids redistribution"],ans:1,
+ why:"Freeware costs nothing to use but the licence usually forbids changes. Open source publishes code and permits modification plus redistribution. Trial-only paid-after-expiry software is shareware."},
+{u:"E",topic:"Ethics",marks:2,
+ stem:"Distinguish plagiarism from software piracy.",
+ opts:["They are the same thing","Plagiarism is about attribution, piracy is about licensing","Piracy is about attribution, plagiarism is about licensing","Neither relates to school work"],ans:1,
+ why:"Plagiarism presents someone else's work as your own without credit. Piracy copies or uses software without licence permission. Copying with credit can still be piracy."},
+{u:"E",topic:"Health hazards",marks:1,
+ stem:"What is the 20-20-20 rule, and what does it help prevent?",
+ opts:["Work 20 hours, sleep 20 minutes, repeat, prevents RSI","Every 20 minutes look 20 feet away for 20 seconds, helps prevent computer vision syndrome","Type 20 words in 20 seconds, prevents back pain","Drink 20 ml every 20 minutes, prevents sleep loss"],ans:1,
+ why:"Regular distance refocusing plus breaks eases eye strain from long screen time, glare and dry eyes. RSI needs posture and wrist fixes instead."},
+{u:"E",topic:"Ergonomics",marks:2,
+ stem:"Ken types 8 hours daily with aching wrists, dry sore eyes and a stiff neck. His laptop sits flat on a low table facing a bright window. Which fix pairs BEST with his wrist pain?",
+ opts:["Raise the screen and use an external keyboard so wrists stay straight","Turn up screen brightness to maximum","Type faster to finish sooner","Move the window behind the screen to add glare"],ans:0,
+ why:"RSI answers need hazard plus remedy. A stand plus external keyboard straightens wrists and lifts the screen toward eye level, which also helps the neck. Glare and eye strain need repositioning plus breaks."},
+{u:"E",topic:"IP in context",marks:2,
+ stem:"The same startup invents a folding hinge, writes a manual, and ships an app. Which mapping is right?",
+ opts:["Hinge: trademark, manual: patent, app code: trade secret only","Hinge: patent, logo: trademark, manual and code: copyright","All three: copyright","All three: patent"],ans:1,
+ why:"Mechanism is an invention (patent). Logo is a brand mark (trademark). Manual text and source code are original works (copyright). Cite the Copyright Ordinance Cap. 528 for enforcement."},
+{u:"E",topic:"Hong Kong law",marks:1,
+ stem:"Under Hong Kong law, unauthorised distribution of copyrighted works is an offence under:",
+ opts:["The Copyright Ordinance Cap. 528","The Crimes Ordinance Cap. 200 only","No law, it is only a school rule","The Companies Ordinance"],ans:0,
+ why:"Cap. 528 provides fines per infringing copy and imprisonment for serious cases. Ignorance of the law is no defence, so name the ordinance in discussion answers."},
+{u:"E",topic:"AR vs VR vs MR",marks:1,
+ stem:"Which example matches the technology correctly?",
+ opts:["AR: fully immersive headset flight simulator","VR: overlaying navigation arrows on the real street","MR: real and virtual objects interacting, such as holographic design tools","3D printing: overlaying filters on photos"],ans:2,
+ why:"AR overlays digital content on the real world. VR replaces it with a fully immersive space. MR blends both so real and virtual objects interact. 3D printing is additive manufacturing, layer by layer."},
+{u:"E",topic:"Innovation",marks:1,
+ stem:"Which statement about 3D printing is correct?",
+ opts:["It is subtractive manufacturing by cutting","It builds objects layer by layer from a digital model","It only prints text documents","It requires no digital model"],ans:1,
+ why:"3D printing is additive manufacturing. Typical exam examples: custom prosthetics, prototypes, printed food."},
+{u:"E",topic:"AI training data",marks:2,
+ stem:"A team trains an AI fire detector from photos. Which data consideration earns marks?",
+ opts:["Photo file size and image resolution only","Enough samples, variety of fire types, plus samples with and without fire","The font used in file names","Whether photos are stored as PDF or HTML"],ans:1,
+ why:"The 2025 marking scheme accepted data set points (quantity, variety, positive and negative examples) and rejected file-quality points such as clarity, resolution and format. Answer what the model must learn."},
+
+/* ---------- ELECTIVE A: ER + multi-table only ---------- */
+{u:"A",topic:"ER symbols",marks:1, diagram:"er-symbols",
+ stem:"In an ER diagram, what does the diamond shape represent?",
+ opts:["Entity","Attribute","Relationship","Primary key"],ans:2,
+ why:"Rectangle is an entity, oval is an attribute, diamond is the relationship between entities. Underline marks the primary key, double oval marks a multi-valued attribute."},
+{u:"A",topic:"M:N mapping",marks:2, diagram:"er-mn",
+ stem:"Students and Courses have a many-to-many relationship (each student takes many courses, each course has many students). How is this mapped to tables?",
+ opts:["Add a foreign key to Students only","Add a foreign key to Courses only","Create a junction table Enrolments with both IDs as a composite key","Store all course names in one text column"],ans:2,
+ why:"M:N cannot sit in either side without duplication. Create Enrolments(StudentID, CourseID, ...) with a composite primary key and two foreign keys. Storing comma lists breaks 1NF."},
+{u:"A",topic:"1:N mapping",marks:1, diagram:"er-1n",
+ stem:"One Department employs many Employees. Where does the foreign key go?",
+ opts:["On the Department (one) side","On the Employee (many) side, referencing Department","On both sides twice","No foreign key is needed"],ans:1,
+ why:"For 1:N, place the foreign key on the many side: Employees.DeptID references Departments.DeptID. The one side stays clean with one row per department."},
+{u:"A",topic:"JOIN logic",marks:2, sqlTables:true,
+ stem:"Tables: Students(StudentID, Name) and Enrolments(StudentID, CourseID). Which query lists ALL students, including those enrolled in nothing, with NULL where there is no match?",
+ opts:["SELECT Name, CourseID FROM Students INNER JOIN Enrolments ON Students.StudentID = Enrolments.StudentID",
+ "SELECT Name, CourseID FROM Students LEFT JOIN Enrolments ON Students.StudentID = Enrolments.StudentID",
+ "SELECT Name, CourseID FROM Students RIGHT JOIN Enrolments ON Students.StudentID = Enrolments.StudentID WHERE CourseID IS NULL",
+ "SELECT Name FROM Students WHERE StudentID IN (SELECT StudentID FROM Enrolments)"],ans:1,
+ why:"LEFT JOIN keeps every row from the left table (Students) and fills NULLs for non-matches. INNER JOIN drops the unenrolled. The subquery option returns only enrolled students, the reverse of what was asked."},
+{u:"A",topic:"Multi-table query",marks:2,
+ stem:"Which query correctly finds names of students enrolled in ICT, using a one-level subquery?",
+ opts:["SELECT Name FROM Students WHERE StudentID IN (SELECT StudentID FROM Enrolments WHERE CourseID = 'ICT')",
+ "SELECT Name FROM Students WHERE Name IN (SELECT CourseID FROM Enrolments)",
+ "SELECT StudentID FROM Enrolments WHERE CourseID IN (SELECT Name FROM Students)",
+ "SELECT Name FROM Students GROUP BY Name HAVING CourseID = 'ICT'"],ans:0,
+ why:"Filter the inner query to ICT enrolments, then match outer StudentID against that set. The syllabus allows one subquery level. HAVING filters groups after GROUP BY, while WHERE filters rows before grouping."},
+
+/* ---------- WRITTEN: Unit B (Section B style) ---------- */
+{u:"B",topic:"RAM vs ROM",stem:"State two differences between RAM and ROM.",
+ parts:[{label:"Two differences, one mark per pair",max:2,ph:"e.g. RAM is volatile, ROM is non-volatile...",
+ points:["RAM is volatile and loses contents without power, ROM is non-volatile (1)","RAM holds programs and data currently in use, ROM holds firmware and boot instructions (1)","RAM is freely read and written, ROM is fixed or hard to change in normal operation (any two pairs, 1 mark each)"]}],
+ why:"Two distinct pairs earn two marks. One pair alone is one mark.",
+ trap:"Saying an SSD loses data without power is wrong. All secondary storage is non-volatile."},
+{u:"B",topic:"System buses",stem:"Name the three system buses. For each one, state what it carries and its direction of data flow.",
+ parts:[
+ {label:"Data bus",max:1,ph:"What it carries, which direction...",points:["Carries the actual data and instructions between components, bidirectional because data is both read and written (1)"]},
+ {label:"Address bus",max:1,ph:"What it carries, which direction...",points:["Carries memory addresses naming where data goes, unidirectional from CPU to memory (1)"]},
+ {label:"Control bus",max:1,ph:"What it carries...",points:["Carries control signals such as read and write commands, interrupts and clock signals (1)"]}],
+ why:"Each bus needs both cargo and direction for its mark.",
+ trap:"The classic swap is calling the address bus bidirectional. Only the CPU names locations, so it is one way."},
+{u:"B",topic:"Fetch step",stem:"Describe what happens in the fetch step of the machine cycle, naming the registers involved. (4 marks)",
+ parts:[{label:"Fetch sequence",max:4,ph:"Start from the PC...",
+ points:["The address in the PC is copied to the MAR (1)","The instruction at that address is read from main memory into the MDR (1)","The instruction is copied from the MDR into the CIR (1)","The PC is incremented to point at the next instruction (1)"]}],
+ why:"Fetch is four moves in order. Decode and execute come after and earn nothing here.",
+ trap:"PC holds the NEXT instruction address, CIR holds the instruction being handled NOW. Swapping them is the classic trap."},
+{u:"B",topic:"Software types",stem:"Distinguish between system software and application software, and give one example of each.",
+ parts:[
+ {label:"Distinction",max:2,ph:"Who or what does each serve...",
+ points:["System software manages the hardware and provides the platform other programs run on (1)","Application software performs tasks for the user (1)"]},
+ {label:"Examples",max:2,ph:"One of each...",
+ points:["System software: operating system, device driver, or utility program (1)","Application software: word processor, spreadsheet, or web browser (1)"]}],
+ why:"The distinction must be visible: system software serves the machine, application software serves the user."},
+{u:"B",topic:"Storage case",stem:"A school needs storage for three jobs: (a) a video editing workstation used by the media club, (b) long-term archive backups of past exam records kept off-site, (c) a 64 GB drive a student carries between home and school. For each job, choose a suitable device and justify it with two criteria.",
+ parts:[
+ {label:"(a) Video editing workstation",max:2,ph:"Device plus two criteria...",
+ points:["SSD (1 for a sound choice, awarded with the justification)","High data transfer speed for large video files (1)","No moving parts, so durable and quiet under sustained work (1)"]},
+ {label:"(b) Archive backups",max:2,ph:"Device plus two criteria...",
+ points:["Magnetic tape, or HDD if tape is unavailable (choice)","Very high capacity at the lowest cost per GB (1)","Sequential access is fine for archives written once and rarely read (1)"]},
+ {label:"(c) Carried 64 GB drive",max:2,ph:"Device plus two criteria...",
+ points:["USB flash drive or portable SSD (choice)","Small and durable with no moving parts for carrying (1)","Random access with enough speed for everyday files, and 64 GB fits the stated size (1)"]}],
+ why:"Each job wants a named device plus criteria drawn from the scenario, not generic praise.",
+ trap:"Two reasons from the same category earned one mark in 2025. Give two distinct kinds of reason."},
+{u:"B",topic:"Memory slowdown",stem:"A student complains her computer slows badly with many browser tabs open, although it has a fast SSD. Explain why in terms of main memory, and recommend one hardware upgrade with a reason.",
+ parts:[{label:"Explanation and upgrade",max:4,ph:"Start from what fills up...",
+ points:["Each open tab holds data in RAM, so many tabs fill main memory (1)","The OS pages memory contents out to disk as virtual memory (1)","Disk access is far slower than RAM, which explains the slowdown. A fast SSD only reduces the penalty (1)","Upgrade: add more RAM, because the root cause is insufficient main memory, not storage speed (1)"]}],
+ why:"Attack the cause (memory) rather than the bystander (storage)."},
+
+/* ---------- WRITTEN: Unit E (Section B style) ---------- */
+{u:"E",topic:"Plagiarism vs piracy",stem:"Distinguish between plagiarism and software piracy.",
+ parts:[{label:"Distinction",max:3,ph:"Define each, then the difference...",
+ points:["Plagiarism is presenting someone else's work or ideas as your own without attribution (1)","Software piracy is copying, distributing or using copyrighted software without the licence holder's permission (1)","The difference: plagiarism is an authorship and honesty offence, piracy is a licensing and legal offence. Copying with credit can still be piracy (1)"]}],
+ why:"Cover both terms plus the difference, or the distinguish mark slips away."},
+{u:"E",topic:"20-20-20 rule",stem:"State the 20-20-20 rule and name the health hazard it helps to prevent.",
+ parts:[{label:"Rule and hazard",max:3,ph:"The numbers, then the hazard...",
+ points:["Every 20 minutes of screen work, look at something about 20 feet away for 20 seconds (2)","It helps prevent computer vision syndrome, eye strain from long screen time (1)"]}],
+ why:"RSI needs posture and wrist fixes instead. Match the remedy to the hazard."},
+{u:"E",topic:"Workstation case",stem:"Ken works from home eight hours a day. He reports aching wrists and tingling fingers, sore dry eyes, and neck stiffness. His laptop sits flat on a low coffee table and the screen reflects a bright window. (a) Identify two health hazards his symptoms suggest. (b) Propose three changes to his workstation, each linked to a hazard you named.",
+ parts:[
+ {label:"(a) Two hazards",max:2,ph:"Name two hazards from the symptoms...",
+ points:["Wrist pain and tingling suggest RSI from prolonged typing with bent wrists (1)","Sore dry eyes suggest computer vision syndrome from long screen time and glare. Neck stiffness points to poor posture from the low screen (any two hazards, 1 each)"]},
+ {label:"(b) Three fixes",max:3,ph:"One fix per hazard...",
+ points:["Raise the laptop on a stand and use an external keyboard so wrists stay straight and the screen nears eye level (1)","Use an ergonomic chair with back support and keep feet flat, easing neck and back strain (1)","Move the screen away from window glare and follow the 20-20-20 rule with hourly breaks for the eyes (1)"]}],
+ why:"Hazard answers must echo the scenario, then pair each hazard with its remedy.",
+ trap:"Naming symptoms alone earns little. Each hazard needs its fix."},
+{u:"E",topic:"IP case",stem:"A Hong Kong startup invents a new folding hinge for laptops, designs a logo and brand name, and writes a user manual. (a) State which IP protection applies to each of the three items. (b) The company fears unauthorised copying of its manual and software. Suggest two measures to reduce IP theft and explain how each works.",
+ parts:[
+ {label:"(a) Three items",max:3,ph:"One protection per item...",
+ points:["The hinge mechanism is an invention, so a patent (1)","The logo and brand name are commercial identifiers, so a trademark (1)","The manual is an original written work, so copyright, which also covers the software code (1)"]},
+ {label:"(b) Two measures",max:4,ph:"Each measure plus how it works...",
+ points:["Digital watermarking embeds an ownership mark in each copy, so pirated copies trace back to the source (1 for naming, 1 for how it works)","A clear licence agreement plus DRM restricts use (one machine, no redistribution) and technically blocks copying, enforceable under the Copyright Ordinance Cap. 528 (1 for naming, 1 for how it works)"]}],
+ why:"Discussion answers need named measures plus a Hong Kong law reference, not generic lines about piracy being unfair.",
+ trap:"Licence based or function based risks score. Vague virus claims and less support do not."},
+
+/* ---------- WRITTEN: Elective A (ER + multi-table only) ---------- */
+{u:"A",topic:"ER mapping",diagram:"er-mn",stem:"The diagram shows STUDENT and COURSE linked M : N, mapped with a new ENROLMENTS table. State the relationship type in words and give the resulting tables with their keys.",
+ parts:[{label:"Type and tables",max:3,ph:"Relationship type, then the three tables...",
+ points:["Many-to-many: each student takes many courses and each course has many students (1)","Students with StudentID as primary key, and Courses with CourseID as primary key (1)","Enrolments(StudentID, CourseID, ...) with a composite primary key of both IDs, each a foreign key to its own table (1)"]}],
+ why:"M:N cannot sit on either side without duplication, so the junction table carries both keys."},
+{u:"A",topic:"Write a JOIN",sqlTables:true,stem:"Using the Students and Enrolments tables below, write a query that returns the names of students enrolled in ICT.",
+ parts:[{label:"SQL query",max:3,ph:"SELECT ...",
+ points:["Correct columns and base table: SELECT Name FROM Students (1)","Correct join with matching condition: INNER JOIN Enrolments ON Students.StudentID = Enrolments.StudentID (1)","Correct filter on the joined rows: WHERE CourseID = 'ICT' (1)"]}],
+ why:"Full model: SELECT Name FROM Students INNER JOIN Enrolments ON Students.StudentID = Enrolments.StudentID WHERE CourseID = 'ICT'."},
+{u:"A",topic:"Write a LEFT JOIN",sqlTables:true,stem:"Write a query that lists ALL students and their CourseID values, including students enrolled in nothing (show NULL where there is no match).",
+ parts:[{label:"SQL query",max:3,ph:"SELECT ...",
+ points:["FROM Students with a LEFT JOIN, so every left-table row survives (1)","Matching condition ON Students.StudentID = Enrolments.StudentID (1)","SELECT Name, CourseID, with NULLs for unenrolled students such as Lee. INNER JOIN would wrongly drop Lee (1)"]}],
+ why:"Full model: SELECT Name, CourseID FROM Students LEFT JOIN Enrolments ON Students.StudentID = Enrolments.StudentID."},
+{u:"A",topic:"Write a subquery",stem:"Write a one-level subquery that finds the names of students enrolled in ICT.",
+ parts:[{label:"SQL query",max:2,ph:"SELECT ... WHERE ... IN (SELECT ...)",
+ points:["Inner query filters ICT enrolments: SELECT StudentID FROM Enrolments WHERE CourseID = 'ICT' (1)","Outer query matches on it: SELECT Name FROM Students WHERE StudentID IN (...) with one subquery level only (1)"]}],
+ why:"Full model: SELECT Name FROM Students WHERE StudentID IN (SELECT StudentID FROM Enrolments WHERE CourseID = 'ICT')."}
+];
+
+const UNIT_NAME = {B:"Unit B", E:"Unit E", A:"Elective A"};
+const UNIT_FULL = {B:"Unit B · System fundamentals", E:"Unit E · Social implications", A:"Elective A · ER + joins"};
+
+let run = {list:[], idx:0, answers:{}, drafts:{}, modelShown:{}, completed:new Set(), flagged:new Set(), score:0, streak:0, bestStreak:0, start:0, elapsed:0, timerId:null, countdown:false, remain:1800, instant:true};
+
+/* written questions carry parts instead of opts; everything below treats both kinds */
+const isWritten = q => !!q.parts;
+const qPossible = q => isWritten(q) ? q.parts.reduce((s,p)=>s+p.max,0) : q.marks;
+function earnedFor(q,a){
+  if(a===undefined) return 0;
+  if(isWritten(q)){ if(!a||!Array.isArray(a.w)) return 0; return a.w.reduce((s,m)=>s+(m||0),0); }
+  return a===q.ans ? q.marks : 0;
+}
+function isDoneQ(q,a){
+  if(a===undefined) return false;
+  if(isWritten(q)) return Array.isArray(a.w) && a.w.length===q.parts.length && a.w.every(m=>m!==null&&m!==undefined);
+  return true;
+}
+const isFullQ = (q,a) => isDoneQ(q,a) && earnedFor(q,a)===qPossible(q);
+const totalEarned = () => run.list.reduce((s,q,i)=>s+earnedFor(q,run.answers[i]),0);
+const totalPossible = () => run.list.reduce((s,q)=>s+qPossible(q),0);
+
+const $ = id => document.getElementById(id);
+const setupView=$("setupView"), quizView=$("quizView"), resultView=$("resultView");
+const qUnit=$("qUnit"), qType=$("qType"), qTopic=$("qTopic"), qMarks=$("qMarks"), qStem=$("qStem"), qExtra=$("qExtra"), qOpts=$("qOpts");
+const qFeed=$("qFeed"), qFeedHead=$("qFeedHead"), qFeedBody=$("qFeedBody");
+const progLabel=$("progLabel"), progFill=$("progFill"), palette=$("palette");
+const streakLabel=$("streakLabel"), scoreLabel=$("scoreLabel"), topStatus=$("topStatus"), topTimer=$("topTimer");
+
+function loadBest(){ try{return JSON.parse(localStorage.getItem("ict-quiz-best-v2")||"null")}catch(e){return null} }
+function saveBest(pct, frac){
+  const prev = loadBest();
+  if(!prev || pct > prev.pct){ localStorage.setItem("ict-quiz-best-v2", JSON.stringify({pct, frac, when:Date.now()})); }
+  renderBest();
+}
+function renderBest(){
+  const b = loadBest();
+  const txt = b ? b.pct + "% (" + b.frac + ")" : "—";
+  $("topBest").textContent = txt; $("statBest").textContent = b ? b.pct + "%" : "—";
+}
+renderBest();
+$("statTotal").textContent = QUESTIONS.length;
+
+/* setup toggles */
+document.querySelectorAll("#unitChips .chip").forEach(ch=>{
+  ch.addEventListener("click",()=>{ ch.setAttribute("aria-pressed", ch.getAttribute("aria-pressed")!=="true"); });
+});
+let chosenLen = 20;
+document.querySelectorAll("#lenSeg button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    document.querySelectorAll("#lenSeg button").forEach(x=>x.setAttribute("aria-pressed","false"));
+    b.setAttribute("aria-pressed","true"); chosenLen = parseInt(b.dataset.len,10);
+  });
+});
+let chosenType = "mixed";
+document.querySelectorAll("#typeSeg button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    document.querySelectorAll("#typeSeg button").forEach(x=>x.setAttribute("aria-pressed","false"));
+    b.setAttribute("aria-pressed","true"); chosenType = b.dataset.type;
+  });
+});
+[["tglShuffle"],["tglInstant"],["tglTimer"]].forEach(([id])=>{
+  $(id).addEventListener("click",()=>{
+    $(id).setAttribute("aria-pressed", $(id).getAttribute("aria-pressed")!=="true");
+  });
+});
+const shuffleOn = () => $("tglShuffle").getAttribute("aria-pressed")==="true";
+const instantOn = () => $("tglInstant").getAttribute("aria-pressed")==="true";
+const timerOn = () => $("tglTimer").getAttribute("aria-pressed")==="true";
+
+function shuffled(a){ const x=a.slice(); for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [x[i],x[j]]=[x[j],x[i]];} return x; }
+
+function buildRun(full=false){
+  const units = [...document.querySelectorAll("#unitChips .chip")]
+    .filter(c=>c.getAttribute("aria-pressed")==="true").map(c=>c.dataset.unit);
+  let poolSrc = QUESTIONS.filter(q=>units.includes(q.u));
+  if(chosenType==="mc") poolSrc = poolSrc.filter(q=>!isWritten(q));
+  if(chosenType==="written") poolSrc = poolSrc.filter(q=>isWritten(q));
+  if(poolSrc.length===0){ alert("No questions match that combination. Try Mixed or add a unit."); return null; }
+  const pickA = (arr,n) => shuffled(arr).slice(0,n);
+  if(full){
+    return shuffleOn()||chosenType==="mixed" ? shuffled(poolSrc) : poolSrc.slice();
+  }
+  const len = Math.min(chosenLen, poolSrc.length);
+  let list;
+  if(chosenType==="mixed"){
+    const poolMC = poolSrc.filter(q=>!isWritten(q));
+    const poolW = poolSrc.filter(q=>isWritten(q));
+    let nW = Math.round(len*0.45);
+    nW = Math.max(0, Math.min(poolW.length, nW));
+    let nMC = Math.min(poolMC.length, len - nW);
+    nW = Math.min(poolW.length, len - nMC);
+    list = shuffled([...pickA(poolMC,nMC), ...pickA(poolW,nW)]);
+  } else {
+    list = pickA(poolSrc, len);
+  }
+  // rebalance toward 85/15 compulsory vs Elective A for runs of 10+
+  if(units.includes("A") && units.includes("B") && list.length>=10){
+    const wantA = Math.max(1, Math.round(list.length*0.15));
+    const haveA = list.filter(q=>q.u==="A").length;
+    if(haveA < wantA){
+      const nonA = list.filter(q=>q.u!=="A");
+      const aQ = shuffled(poolSrc.filter(q=>q.u==="A" && !list.includes(q)));
+      const need = Math.min(wantA-haveA, aQ.length, nonA.length);
+      const drop = new Set(shuffled(nonA).slice(0,need));
+      list = [...list.filter(q=>!drop.has(q)), ...aQ.slice(0,need)];
+      list = shuffled(list);
+    }
+  }
+  return list;
+}
+
+function fmt(s){ s=Math.max(0,Math.floor(s)); const m=Math.floor(s/60); return String(m).padStart(2,"0")+":"+String(s%60).padStart(2,"0"); }
+
+$("btnStart").addEventListener("click",()=>startRun(false));
+$("btnShuffleAll").addEventListener("click",()=>startRun(true));
+
+function startRun(full){
+  const list = buildRun(full);
+  if(!list) return;
+  if(run.timerId) clearInterval(run.timerId);
+  run = {list, idx:0, answers:{}, drafts:{}, modelShown:{}, flagged:new Set(), score:0, streak:0, bestStreak:0,
+    start:Date.now(), elapsed:0, timerId:null, countdown:timerOn(), remain:1800, instant:instantOn()};
+  setupView.style.display="none"; resultView.style.display="none"; quizView.style.display="block";
+  topStatus.textContent = "Question 1 of " + list.length;
+  run.timerId = setInterval(()=>{
+    if(run.countdown){
+      run.remain--;
+      topTimer.textContent = "Left " + fmt(run.remain);
+      if(run.remain<=0){ clearInterval(run.timerId); finish(); }
+    } else {
+      run.elapsed = Math.floor((Date.now()-run.start)/1000);
+      topTimer.textContent = fmt(run.elapsed);
+    }
+  },1000);
+  topTimer.textContent = run.countdown ? "Left 30:00" : "00:00";
+  renderPalette(); renderQ();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function renderPalette(){
+  palette.innerHTML="";
+  run.list.forEach((q,i)=>{
+    const b=document.createElement("button");
+    b.textContent=i+1;
+    if(isDoneQ(q,run.answers[i])) b.classList.add("done");
+    if(i===run.idx) b.classList.add("current");
+    if(run.flagged.has(i)) b.classList.add("flagged");
+    b.title = UNIT_NAME[q.u]+" · Q"+(i+1)+(isWritten(q)?" · written":" · MC");
+    b.addEventListener("click",()=>{saveDraft();run.idx=i;renderQ();});
+    palette.appendChild(b);
+  });
+  const doneCount = run.list.filter((q,i)=>isDoneQ(q,run.answers[i])).length;
+  progLabel.textContent = "Q"+(run.idx+1)+" of "+run.list.length;
+  progFill.style.width = (doneCount/run.list.length*100)+"%";
+  streakLabel.textContent = "Streak "+run.streak;
+  scoreLabel.textContent = "Score "+totalEarned()+"/"+totalPossible();
+}
+
+function sqlHighlight(s){
+  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")
+    .replace(/\b(SELECT|FROM|WHERE|IN|LEFT|RIGHT|INNER|JOIN|ON|GROUP|BY|HAVING|ORDER|IS|NULL|NOT)\b/g,'<span class="k">$1</span>')
+    .replace(/('[^']*')/g,'<span class="s">$1</span>');
+}
+function erSVG(kind){
+  if(kind==="er-symbols") return `<svg class="er-svg" viewBox="0 0 560 150" width="100%" height="150" role="img" aria-label="ER symbols">
+    <rect x="20" y="45" width="120" height="60" fill="#fff" stroke="#191D2B" stroke-width="2.5"/><text x="80" y="80" text-anchor="middle" font-family="IBM Plex Mono" font-size="14">STUDENT</text><text x="80" y="122" text-anchor="middle" font-size="11" font-family="IBM Plex Mono" fill="#4B5064">entity</text>
+    <ellipse cx="230" cy="75" rx="55" ry="30" fill="#fff" stroke="#191D2B" stroke-width="2.5"/><text x="230" y="79" text-anchor="middle" font-family="IBM Plex Mono" font-size="13">Name</text><text x="230" y="122" text-anchor="middle" font-size="11" font-family="IBM Plex Mono" fill="#4B5064">attribute</text>
+    <polygon points="380,45 440,75 380,105 320,75" fill="#FFF1DB" stroke="#191D2B" stroke-width="2.5"/><text x="380" y="79" text-anchor="middle" font-family="IBM Plex Mono" font-size="12">enrols</text><text x="380" y="122" text-anchor="middle" font-size="11" font-family="IBM Plex Mono" fill="#4B5064">relationship</text>
+    <text x="490" y="70" font-family="IBM Plex Mono" font-size="14" text-decoration="underline">StuID</text><text x="490" y="92" font-family="IBM Plex Mono" font-size="11" fill="#4B5064">underlined = PK</text>
+  </svg>`;
+  if(kind==="er-mn") return `<svg class="er-svg" viewBox="0 0 600 150" width="100%" height="150" role="img" aria-label="Many to many mapping">
+    <rect x="15" y="40" width="130" height="55" fill="#fff" stroke="#191D2B" stroke-width="2.5"/><text x="80" y="72" text-anchor="middle" font-family="IBM Plex Mono" font-size="13">STUDENT</text>
+    <polygon points="235,40 285,67 235,95 185,67" fill="#FFF1DB" stroke="#191D2B" stroke-width="2.5"/>
+    <rect x="325" y="40" width="130" height="55" fill="#fff" stroke="#191D2B" stroke-width="2.5"/><text x="390" y="72" text-anchor="middle" font-family="IBM Plex Mono" font-size="13">COURSE</text>
+    <rect x="215" y="105" width="200" height="34" fill="#191D2B"/><text x="315" y="127" text-anchor="middle" font-family="IBM Plex Mono" font-size="12" fill="#fff">new table: ENROLMENTS</text>
+    <text x="165" y="71" font-family="IBM Plex Mono" font-size="12">M</text><text x="300" y="71" font-family="IBM Plex Mono" font-size="12">N</text>
+    <text x="490" y="60" font-family="IBM Plex Mono" font-size="12">StudentID (FK)</text><text x="490" y="80" font-family="IBM Plex Mono" font-size="12">CourseID (FK)</text>
+  </svg>`;
+  if(kind==="er-1n") return `<svg class="er-svg" viewBox="0 0 600 130" width="100%" height="130" role="img" aria-label="One to many mapping">
+    <rect x="20" y="30" width="150" height="55" fill="#fff" stroke="#191D2B" stroke-width="2.5"/><text x="95" y="62" text-anchor="middle" font-family="IBM Plex Mono" font-size="13">DEPARTMENT</text>
+    <line x1="170" y1="57" x2="260" y2="57" stroke="#191D2B" stroke-width="2.5"/><text x="215" y="45" text-anchor="middle" font-family="IBM Plex Mono" font-size="12">1 : N</text>
+    <rect x="260" y="30" width="150" height="55" fill="#fff" stroke="#191D2B" stroke-width="2.5"/><text x="335" y="62" text-anchor="middle" font-family="IBM Plex Mono" font-size="13">EMPLOYEE</text>
+    <text x="440" y="55" font-family="IBM Plex Mono" font-size="12">FK DeptID goes here,</text><text x="440" y="73" font-family="IBM Plex Mono" font-size="12">on the MANY side</text>
+  </svg>`;
+  return "";
+}
+
+function saveDraft(){
+  const q = run.list[run.idx];
+  if(!q || !isWritten(q)) return;
+  const areas = qOpts.querySelectorAll("textarea[data-part]");
+  if(!areas.length) return;
+  const d = run.drafts[run.idx] || (run.drafts[run.idx] = []);
+  areas.forEach(a=>{ d[+a.dataset.part] = a.value; });
+}
+
+function renderQ(){
+  const q = run.list[run.idx];
+  const letters=["A","B","C","D"];
+  const written = isWritten(q);
+  const poss = qPossible(q);
+  qUnit.textContent = UNIT_FULL[q.u]; qUnit.className="unit "+q.u;
+  qType.textContent = written ? "Written" : "MC";
+  qType.className = "type-badge " + (written ? "written" : "mc");
+  qTopic.textContent = q.topic;
+  qMarks.textContent = poss+(poss>1?" marks":" mark");
+  qStem.textContent = (run.idx+1)+". "+q.stem;
+  qExtra.innerHTML="";
+  if(q.diagram) qExtra.innerHTML += erSVG(q.diagram);
+  if(q.sqlTables){
+    qExtra.innerHTML += `<div class="minisql-tables">
+      <div><table><caption>Students</caption><tr><th>StudentID</th><th>Name</th></tr><tr><td>1</td><td>Chan</td></tr><tr><td>2</td><td>Wong</td></tr><tr><td>3</td><td>Lee</td></tr></table></div>
+      <div><table><caption>Enrolments</caption><tr><th>StudentID</th><th>CourseID</th></tr><tr><td>1</td><td>ICT</td></tr><tr><td>1</td><td>MATH</td></tr><tr><td>2</td><td>ICT</td></tr></table></div>
+    </div><p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin:0 0 12px">Note: Lee (ID 3) has no enrolment row. That is the row LEFT JOIN must keep.</p>`;
+  }
+  qOpts.innerHTML="";
+  qFeed.classList.remove("show");
+  if(!written){
+    const picked = run.answers[run.idx];
+    q.opts.forEach((t,i)=>{
+      const b=document.createElement("button");
+      b.className="opt"; b.innerHTML=`<span class="key">${letters[i]}</span><span></span>`;
+      b.lastChild.textContent=t;
+      if(picked!==undefined){
+        b.disabled=true;
+        if(i===q.ans) b.classList.add("correct");
+        else if(i===picked) b.classList.add("wrong");
+        else b.classList.add("dim");
+      }
+      b.addEventListener("click",()=>answer(i));
+      qOpts.appendChild(b);
+    });
+    if(picked!==undefined && run.instant) showFeed(picked===q.ans);
+    $("btnReveal").textContent = "Show answer";
+  } else {
+    const marked = run.answers[run.idx];
+    const done = isDoneQ(q, marked);
+    const drafts = run.drafts[run.idx] || [];
+    const zone = document.createElement("div");
+    zone.className = "answer-zone";
+    q.parts.forEach((p,pi)=>{
+      const block = document.createElement("div");
+      block.className = "part-block";
+      const head = document.createElement("div");
+      head.className = "part-head";
+      const lab = document.createElement("span");
+      lab.textContent = (q.parts.length>1 ? "("+String.fromCharCode(97+pi)+") " : "") + p.label;
+      const pm = document.createElement("span");
+      pm.className = "pmarks";
+      pm.textContent = "max "+p.max;
+      head.appendChild(lab); head.appendChild(pm);
+      const ta = document.createElement("textarea");
+      ta.dataset.part = pi;
+      ta.placeholder = p.ph || "Type your answer...";
+      ta.rows = 4;
+      ta.value = drafts[pi] || "";
+      if(done) ta.disabled = true;
+      ta.addEventListener("input", ()=>{
+        const d = run.drafts[run.idx] || (run.drafts[run.idx] = []);
+        d[pi] = ta.value;
+      });
+      block.appendChild(head); block.appendChild(ta);
+      zone.appendChild(block);
+    });
+    qOpts.appendChild(zone);
+
+    const modelBox = document.createElement("div");
+    modelBox.className = "model-box";
+    modelBox.id = "modelBox";
+    const modelHead = document.createElement("div");
+    modelHead.className = "model-head";
+    modelHead.textContent = "Model answer and marking points";
+    const modelBody = document.createElement("div");
+    modelBody.className = "model-body";
+    const intro = document.createElement("div");
+    intro.textContent = q.why || "";
+    modelBody.appendChild(intro);
+    q.parts.forEach((p,pi)=>{
+      const h = document.createElement("div");
+      h.style.marginTop = "10px"; h.style.fontWeight = "700";
+      h.textContent = (q.parts.length>1 ? "("+String.fromCharCode(97+pi)+") " : "") + p.label + " — max "+p.max;
+      modelBody.appendChild(h);
+      const ol = document.createElement("ol");
+      p.points.forEach(pt=>{
+        const li = document.createElement("li");
+        li.textContent = pt;
+        ol.appendChild(li);
+      });
+      modelBody.appendChild(ol);
+    });
+    if(q.trap){
+      const t = document.createElement("div");
+      t.style.marginTop = "10px";
+      const b = document.createElement("b");
+      b.className = "trap"; b.textContent = "exam trap";
+      const s = document.createElement("div");
+      s.textContent = q.trap;
+      t.appendChild(b); t.appendChild(s);
+      modelBody.appendChild(t);
+    }
+    modelBox.appendChild(modelHead); modelBox.appendChild(modelBody);
+    qOpts.appendChild(modelBox);
+
+    const self = document.createElement("div");
+    self.className = "selfmark";
+    self.id = "selfBox";
+    const sp = document.createElement("p");
+    sp.textContent = "Mark yourself strictly against the points above, then record each part.";
+    self.appendChild(sp);
+    const cur = (marked && Array.isArray(marked.w)) ? marked.w.slice() : q.parts.map(()=>null);
+    q.parts.forEach((p,pi)=>{
+      const row = document.createElement("div");
+      row.style.cssText = "display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0";
+      const lab = document.createElement("span");
+      lab.style.cssText = "font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:600";
+      lab.textContent = (q.parts.length>1 ? "("+String.fromCharCode(97+pi)+") " : "") + "0–"+p.max+":";
+      row.appendChild(lab);
+      const btns = document.createElement("div");
+      btns.className = "mark-btns";
+      for(let m=0;m<=p.max;m++){
+        const mb = document.createElement("button");
+        mb.textContent = m;
+        mb.type = "button";
+        if(cur[pi]===m) mb.classList.add("sel");
+        mb.addEventListener("click", ()=>selfMark(pi,m));
+        btns.appendChild(mb);
+      }
+      row.appendChild(btns);
+      self.appendChild(row);
+    });
+    const note = document.createElement("div");
+    note.className = "marked-note";
+    note.id = "markedNote";
+    if(done){
+      const e = earnedFor(q, marked);
+      note.textContent = "Recorded: "+e+" / "+poss+" marks.";
+    } else {
+      note.textContent = "Open the model first, compare line by line, then tap a mark for every part.";
+    }
+    self.appendChild(note);
+    qOpts.appendChild(self);
+
+    const shown = !!run.modelShown[run.idx];
+    if(shown || done){
+      modelBox.classList.add("show");
+      self.classList.add("show");
+      $("btnReveal").textContent = "Model shown";
+    } else {
+      $("btnReveal").textContent = "Show model";
+    }
+    if(done){
+      const ta2 = qOpts.querySelectorAll("textarea[data-part]");
+      ta2.forEach(a=>{ a.disabled = true; });
+    }
+  }
+  $("btnFinish").style.display = run.idx===run.list.length-1 ? "inline-flex" : "none";
+  $("btnNext").style.display = run.idx===run.list.length-1 ? "none" : "inline-flex";
+  $("btnFlag").textContent = run.flagged.has(run.idx) ? "★ Flagged (unflag)" : "Flag for review";
+  renderPalette();
+  topStatus.textContent = "Question "+(run.idx+1)+" of "+run.list.length;
+}
+
+function selfMark(pi,m){
+  const q = run.list[run.idx];
+  if(!isWritten(q)) return;
+  saveDraft();
+  if(!run.modelShown[run.idx]) run.modelShown[run.idx]=true;
+  const wasDone = isDoneQ(q, run.answers[run.idx]);
+  const cur = run.answers[run.idx];
+  const w = (cur && Array.isArray(cur.w)) ? cur.w.slice() : q.parts.map(()=>null);
+  w[pi]=m;
+  run.answers[run.idx]={w};
+  if(!wasDone && isDoneQ(q, run.answers[run.idx])){
+    const e = w.reduce((s,x)=>s+(x||0),0);
+    if(e===qPossible(q)){ run.streak++; run.bestStreak=Math.max(run.bestStreak,run.streak); }
+    else { run.streak=0; }
+  }
+  renderQ();
+}
+
+function showFeed(ok){
+  const q=run.list[run.idx];
+  qFeed.classList.add("show");
+  qFeedHead.textContent = ok ? "Correct" : "Not quite — correct answer: "+"ABCD"[q.ans];
+  qFeedHead.className="feedback-head "+(ok?"ok":"no");
+  qFeedBody.innerHTML="";
+  const p=document.createElement("div"); p.textContent=q.why; qFeedBody.appendChild(p);
+  if(q.trap){
+    const t=document.createElement("div"); t.style.marginTop="10px";
+    const b=document.createElement("b"); b.className="trap"; b.textContent="exam trap";
+    const s=document.createElement("div"); s.textContent=q.trap;
+    t.appendChild(b); t.appendChild(s); qFeedBody.appendChild(t);
+  }
+}
+
+function answer(i){
+  const q = run.list[run.idx];
+  if(!q || isWritten(q)) return;
+  if(run.answers[run.idx]!==undefined) return;
+  run.answers[run.idx]=i;
+  const ok = i===q.ans;
+  if(ok){ run.bestStreak=Math.max(run.bestStreak,++run.streak); }
+  else { run.streak=0; }
+  renderQ();
+}
+
+$("btnNext").addEventListener("click",()=>{ saveDraft(); if(run.idx<run.list.length-1){run.idx++;renderQ();window.scrollTo({top:0,behavior:"smooth"});} });
+$("btnPrev").addEventListener("click",()=>{ saveDraft(); if(run.idx>0){run.idx--;renderQ();} });
+$("btnFlag").addEventListener("click",()=>{
+  if(run.flagged.has(run.idx)) run.flagged.delete(run.idx); else run.flagged.add(run.idx);
+  renderQ();
+});
+$("btnReveal").addEventListener("click",()=>{
+  const q = run.list[run.idx];
+  if(!q) return;
+  if(isWritten(q)){
+    saveDraft();
+    run.modelShown[run.idx]=true;
+    renderQ();
+    const mb = document.getElementById("modelBox");
+    if(mb) mb.scrollIntoView({behavior:"smooth",block:"nearest"});
+    return;
+  }
+  if(run.answers[run.idx]!==undefined) return;
+  run.answers[run.idx]=-1; run.streak=0; renderQ();
+});
+$("btnFinish").addEventListener("click",()=>{ saveDraft(); finish(); });
+
+document.addEventListener("keydown",e=>{
+  if(quizView.style.display!=="block") return;
+  const tag = e.target && e.target.tagName;
+  if(tag==="TEXTAREA"||tag==="INPUT") return;
+  const q = run.list[run.idx];
+  if(e.key>="1"&&e.key<="4"){ if(q && !isWritten(q)){ const i=+e.key-1; if(i<q.opts.length) answer(i); } }
+  else if(e.key==="ArrowRight"){ $("btnNext").click(); }
+  else if(e.key==="ArrowLeft"){ $("btnPrev").click(); }
+  else if(e.key.toLowerCase()==="f"){ $("btnFlag").click(); }
+  else if(e.key==="Enter"&&run.idx===run.list.length-1){ saveDraft(); finish(); }
+});
+
+function finish(){
+  saveDraft();
+  clearInterval(run.timerId);
+  if(!run.countdown) run.elapsed = Math.floor((Date.now()-run.start)/1000);
+  else run.elapsed = 1800 - run.remain;
+  quizView.style.display="none"; resultView.style.display="block";
+  const earned=totalEarned(), poss=totalPossible();
+  const pct = poss? Math.round(earned/poss*100):0;
+  const fullCount = run.list.filter((q,i)=>isFullQ(q,run.answers[i])).length;
+  const doneCount = run.list.filter((q,i)=>isDoneQ(q,run.answers[i])).length;
+  const leftBlank = run.list.length - doneCount;
+  // ring
+  const C=527.8;
+  requestAnimationFrame(()=>{
+    $("ringFg").style.strokeDashoffset = C - C*pct/100;
+    $("ringFg").style.stroke = pct>=80 ? "#3BB273" : pct>=60 ? "#FF4D00" : "#D92D20";
+  });
+  $("ringText").textContent=pct+"%";
+  $("ringSub").textContent=earned+" / "+poss;
+  $("rCorrect").textContent=earned+" / "+poss;
+  $("rStreak").textContent=run.bestStreak;
+  $("rTime").textContent=fmt(run.elapsed)+(leftBlank? " · "+leftBlank+" unmarked":"");
+  const g = pct>=85?["Exam ready","Clean and consistent. Bank this method and move to timed past papers."]
+    : pct>=70?["Solid pass","Mostly there. Retry the misses below, then run the full set once more."]
+    : pct>=50?["Shaky pass","Ideas are present but traps still bite. Re-read each explanation before retrying."]
+    : ["Needs another round","Normal at this stage. Do a Quick 10 on your weakest unit, then come back."];
+  $("gradeTitle").textContent=g[0];
+  $("gradeLine").textContent=g[1]+(leftBlank? " "+leftBlank+" question"+(leftBlank>1?"s were":" was")+" left unmarked and scored zero." : " Full marks on "+fullCount+" of "+run.list.length+" questions.");
+  saveBest(pct, earned+"/"+poss);
+  // breakdown
+  const units=["B","E","A"];
+  $("breakBars").innerHTML="";
+  units.forEach(u=>{
+    const idxs = run.list.map((q,i)=>q.u===u?i:-1).filter(i=>i>=0);
+    if(!idxs.length) return;
+    const e = idxs.reduce((s,i)=>s+earnedFor(run.list[i],run.answers[i]),0);
+    const p = idxs.reduce((s,i)=>s+qPossible(run.list[i]),0);
+    const pc = p? Math.round(e/p*100):0;
+    const row=document.createElement("div"); row.className="bar-row";
+    row.innerHTML=`<span><b>${UNIT_NAME[u]}</b><br><span style="color:var(--ink-soft);font-size:12px">${e}/${p} marks</span></span>
+      <div class="bar-track"><div class="bar-fill" style="width:${pc}%;${u==="B"?"background:#2456E6":u==="E"?"background:#0C7A5C":"background:#B45309"}"></div></div>
+      <b style="font-family:'IBM Plex Mono',monospace">${pc}%</b>`;
+    $("breakBars").appendChild(row);
+  });
+  // also split MC vs written
+  ["mc","written"].forEach(kind=>{
+    const idxs = run.list.map((q,i)=>((kind==="written")===isWritten(q))?i:-1).filter(i=>i>=0);
+    if(!idxs.length) return;
+    const e = idxs.reduce((s,i)=>s+earnedFor(run.list[i],run.answers[i]),0);
+    const p = idxs.reduce((s,i)=>s+qPossible(run.list[i]),0);
+    const pc = p? Math.round(e/p*100):0;
+    const row=document.createElement("div"); row.className="bar-row";
+    row.innerHTML=`<span><b>${kind==="written"?"Written":"Multiple choice"}</b><br><span style="color:var(--ink-soft);font-size:12px">${e}/${p} marks</span></span>
+      <div class="bar-track"><div class="bar-fill" style="width:${pc}%"></div></div>
+      <b style="font-family:'IBM Plex Mono',monospace">${pc}%</b>`;
+    $("breakBars").appendChild(row);
+  });
+  // review
+  $("reviewList").innerHTML="";
+  run.list.forEach((q,i)=>{
+    const a=run.answers[i];
+    const written=isWritten(q);
+    const e=earnedFor(q,a), poss=qPossible(q);
+    const ok = isFullQ(q,a);
+    const d=document.createElement("details"); d.className="rev";
+    if(!ok) d.open = true;
+    const s=document.createElement("summary");
+    const tag=document.createElement("span"); tag.className=ok?"tag-ok":"tag-no";
+    tag.textContent = written ? (e+" / "+poss) : (ok?"correct":"missed");
+    const t=document.createElement("span"); t.textContent="Q"+(i+1)+" · "+UNIT_NAME[q.u]+" · "+q.topic+(written?" · written":" · MC");
+    s.appendChild(tag); s.appendChild(t);
+    const body=document.createElement("div"); body.className="rev-body";
+    const stem=document.createElement("div"); stem.style.fontWeight="600"; stem.style.marginBottom="6px"; stem.textContent=q.stem;
+    body.appendChild(stem);
+    if(!written){
+      const ans=document.createElement("div");
+      const pre=document.createElement("span");
+      pre.style.cssText="font-family:'IBM Plex Mono',monospace;font-size:12.5px";
+      pre.textContent="Correct: "+"ABCD"[q.ans]+" · ";
+      ans.appendChild(pre);
+      const ansText=document.createElement("span"); ansText.textContent = q.opts[q.ans];
+      ans.appendChild(ansText);
+      body.appendChild(ans);
+      if(a!==undefined&&a>=0&&a!==q.ans){
+        const y=document.createElement("div"); y.style.color="#D92D20";
+        y.textContent="You chose: "+"ABCD"[a]+" · "+q.opts[a];
+        body.appendChild(y);
+      }
+      if(a===-1){
+        const y=document.createElement("div"); y.style.color="#D92D20";
+        y.textContent="Revealed without answering.";
+        body.appendChild(y);
+      }
+    } else {
+      const draft = run.drafts[i]||[];
+      q.parts.forEach((p,pi)=>{
+        const h=document.createElement("div");
+        h.style.marginTop="8px"; h.style.fontWeight="700";
+        const got=(a&&Array.isArray(a.w)&&a.w[pi]!==undefined&&a.w[pi]!==null)?a.w[pi]:"—";
+        h.textContent=(q.parts.length>1?"("+String.fromCharCode(97+pi)+") ":"")+p.label+" — you gave "+got+" / "+p.max;
+        body.appendChild(h);
+        if(draft[pi]){
+          const mine=document.createElement("div");
+          mine.style.cssText="border-left:3px solid var(--line-dark);padding:6px 10px;margin:4px 0;background:#fff;font-style:italic";
+          mine.textContent="Your answer: "+draft[pi];
+          body.appendChild(mine);
+        }
+        const ol=document.createElement("ol");
+        p.points.forEach(pt=>{ const li=document.createElement("li"); li.textContent=pt; ol.appendChild(li); });
+        body.appendChild(ol);
+      });
+    }
+    const w=document.createElement("div"); w.style.marginTop="6px"; w.textContent=q.why;
+    body.appendChild(w);
+    if(q.trap){
+      const t2=document.createElement("div"); t2.style.marginTop="8px";
+      const b=document.createElement("b"); b.className="trap"; b.textContent="exam trap";
+      const s2=document.createElement("div"); s2.textContent=q.trap;
+      t2.appendChild(b); t2.appendChild(s2); body.appendChild(t2);
+    }
+    d.appendChild(s); d.appendChild(body);
+    $("reviewList").appendChild(d);
+  });
+  topStatus.textContent="Finished · "+pct+"%";
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+$("btnRestart").addEventListener("click",()=>{
+  resultView.style.display="none"; setupView.style.display="block";
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+$("btnRetry").addEventListener("click",()=>{
+  const missIdx = run.list.map((q,i)=>isFullQ(q,run.answers[i])?-1:i).filter(i=>i>=0);
+  if(!missIdx.length){ alert("Nothing to retry, full marks everywhere."); return; }
+  const missList = missIdx.map(i=>run.list[i]);
+  run = {list:missList, idx:0, answers:{}, drafts:{}, modelShown:{}, flagged:new Set(),
+    score:0, streak:0, bestStreak:0,
+    start:Date.now(), elapsed:0, timerId:null, countdown:false, remain:1800, instant:true};
+  resultView.style.display="none"; quizView.style.display="block";
+  if(run.timerId) clearInterval(run.timerId);
+  run.timerId=setInterval(()=>{ run.elapsed=Math.floor((Date.now()-run.start)/1000); topTimer.textContent=fmt(run.elapsed); },1000);
+  renderPalette(); renderQ();
+});
+</script>
+</body>
+</html>
