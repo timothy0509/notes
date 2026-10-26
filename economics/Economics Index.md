@@ -47,12 +47,6 @@ aliases:
 | [[Macroeconomics/Extension of Trade Theory\|Extension of Trade Theory]] | PPF analysis of comparative advantage, globalisation |
 | [[Macroeconomics/Economic Growth and Development\|Economic Growth and Development]] | Growth measurement, HDI, factors affecting growth, sustainability |
 
-## Test Prep
-
-| Note | Covers |
-|------|--------|
-| [[Test Prep/AS-AD Quiz Prep\|AS-AD Quiz Prep]] | Short-run vs long-run AS-AD, self-correction, fiscal/monetary intervention, practice questions with answers |
-
 ## Legacy Notes
 
 These comprehensive notes are being superseded by the topic-based files above:
